@@ -378,6 +378,10 @@ var blog_detail_component_1 = __webpack_require__(/*! ./components/blog/blog-det
 var events_component_1 = __webpack_require__(/*! ./components/events/events.component */ "./src/app/components/events/events.component.ts");
 var event_component_1 = __webpack_require__(/*! ./components/events/event/event.component */ "./src/app/components/events/event/event.component.ts");
 var contactus_component_1 = __webpack_require__(/*! ./components/contactus/contactus.component */ "./src/app/components/contactus/contactus.component.ts");
+var gold_component_1 = __webpack_require__(/*! ./components/membership/gold/gold.component */ "./src/app/components/membership/gold/gold.component.ts");
+var platinum_component_1 = __webpack_require__(/*! ./components/membership/platinum/platinum.component */ "./src/app/components/membership/platinum/platinum.component.ts");
+var silver_component_1 = __webpack_require__(/*! ./components/membership/silver/silver.component */ "./src/app/components/membership/silver/silver.component.ts");
+var salesforce_component_1 = __webpack_require__(/*! ./components/courses/salesforce/salesforce.component */ "./src/app/components/courses/salesforce/salesforce.component.ts");
 exports.routes = [
     { path: '', component: landing_component_1.LandingComponent },
     { path: 'courses', component: maincourse_component_1.MaincourseComponent, children: [
@@ -417,11 +421,33 @@ exports.routes = [
     { path: 'course/game-development-course-training-hyderabad', component: gamedevelopmentcourse_component_1.GamedevelopmentcourseComponent },
     { path: 'course/graphic-design-course-training-hyderabad', component: graphicdesigncourse_component_1.GraphicdesigncourseComponent },
     { path: 'course/ui-ux-course-training-hyderabad', component: uiuxcourse_component_1.UiuxcourseComponent },
-    { path: 'course/servicenow-system-admin-course-training-hyderabad', component: servicenow_system_admin_component_1.ServiceNowSystemAdminComponent },
+    { path: 'course/servicenow-course-training-hyderabad', component: servicenow_system_admin_component_1.ServiceNowSystemAdminComponent },
+    { path: 'course/salesforce-course-training-hyderabad', component: salesforce_component_1.SalesforceComponent },
     { path: 'Placements', component: placement_component_1.PlacementComponent },
     { path: 'Academic', component: academic_component_1.AcademicComponent },
     { path: 'other', component: onlyatdigitallync_component_1.OnlyatdigitallyncComponent },
     { path: 'Future', component: futuredegrees_component_1.FuturedegreesComponent },
+    { path: 'membership/gold-membership', component: gold_component_1.GoldComponent },
+    { path: 'membership/silver-membership', component: silver_component_1.SilverComponent },
+    { path: 'membership/platinum-membership', component: platinum_component_1.PlatinumComponent }
+    // {path:'program/fullstack-program',component:FullstackprogramComponent},
+    // {path:'program/fullstack-java',component:FullstackwithjavaComponent},
+    // {path:'program/fullstack-python-program',component:FullstackwithpythonComponent},
+    // {path:'program/python-engineer-program',component:PythonengineerprogramComponent},
+    // {path:'program/AI-python',component:AiwithpythonComponent},
+    // {path:'program/machine-learning-program',component:MachinelearningprogramComponent},
+    // {path:'program/blockchain-python',component:BlockchainwithpythonComponent},
+    // {path:'program/blockchain-javascript',component:BlockchainwithjavascriptComponent},
+    // {path:'program/blockchain-foundation',component:BlockchainfoundationComponent},
+    // {path:'program/cloud-devops-engineer',component:ClouddevopsengineerComponent},
+    // {path:'program/digital-marketing-program',component:DigitalmarketingexecutiveComponent},
+    // {path:'program/FSIT-Program',component:FsitprogramComponent},
+    // {path:'program/Gaming,AR-VR',component:GamingarvrprogramComponent},
+    // {path:'program/CRT',component:CrtprogramComponent},
+    // {path:'program/Hackathon',component:GethackathonprogramComponent}
+    // { path: 'fullstack', component: FullstackComponent },
+    // { path: 'blockchain', component: BlockchainComponent },
+    // { path: 'digitalmarketing', component: DigitalmarketingComponent },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -590,66 +616,74 @@ var i26 = __webpack_require__(/*! ./components/courses/gamedevelopmentcourse/gam
 var i27 = __webpack_require__(/*! ./components/courses/graphicdesigncourse/graphicdesigncourse.component.ngfactory */ "./src/app/components/courses/graphicdesigncourse/graphicdesigncourse.component.ngfactory.js");
 var i28 = __webpack_require__(/*! ./components/courses/uiuxcourse/uiuxcourse.component.ngfactory */ "./src/app/components/courses/uiuxcourse/uiuxcourse.component.ngfactory.js");
 var i29 = __webpack_require__(/*! ./components/courses/servicenow-system-admin/servicenow-system-admin.component.ngfactory */ "./src/app/components/courses/servicenow-system-admin/servicenow-system-admin.component.ngfactory.js");
-var i30 = __webpack_require__(/*! ./components/programs/features/placement/placement.component.ngfactory */ "./src/app/components/programs/features/placement/placement.component.ngfactory.js");
-var i31 = __webpack_require__(/*! ./components/programs/features/academic/academic.component.ngfactory */ "./src/app/components/programs/features/academic/academic.component.ngfactory.js");
-var i32 = __webpack_require__(/*! ./components/programs/features/onlyatdigitallync/onlyatdigitallync.component.ngfactory */ "./src/app/components/programs/features/onlyatdigitallync/onlyatdigitallync.component.ngfactory.js");
-var i33 = __webpack_require__(/*! ./components/programs/features/futuredegrees/futuredegrees.component.ngfactory */ "./src/app/components/programs/features/futuredegrees/futuredegrees.component.ngfactory.js");
-var i34 = __webpack_require__(/*! ./app.component.ngfactory */ "./src/app/app.component.ngfactory.js");
-var i35 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i36 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
-var i37 = __webpack_require__(/*! @angular/platform-server */ "@angular/platform-server");
-var i38 = __webpack_require__(/*! @angular/animations/browser */ "@angular/animations/browser");
-var i39 = __webpack_require__(/*! @angular/platform-browser/animations */ "@angular/platform-browser/animations");
-var i40 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
-var i41 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i42 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
-var i43 = __webpack_require__(/*! @angular/http */ "@angular/http");
-var i44 = __webpack_require__(/*! ./shared/service/apex.service */ "./src/app/shared/service/apex.service.ts");
-var i45 = __webpack_require__(/*! ./components/footer/footer.service */ "./src/app/components/footer/footer.service.ts");
-var i46 = __webpack_require__(/*! ./services/window.service */ "./src/app/services/window.service.ts");
-var i47 = __webpack_require__(/*! ./components/courses/courses.service */ "./src/app/components/courses/courses.service.ts");
-var i48 = __webpack_require__(/*! ./components/thankyoupage/thankyou.service */ "./src/app/components/thankyoupage/thankyou.service.ts");
-var i49 = __webpack_require__(/*! ./components/programs/programs.service */ "./src/app/components/programs/programs.service.ts");
-var i50 = __webpack_require__(/*! ./components/header/header.service */ "./src/app/components/header/header.service.ts");
-var i51 = __webpack_require__(/*! ./components/blog/blog.service */ "./src/app/components/blog/blog.service.ts");
-var i52 = __webpack_require__(/*! ./components/events/events.service */ "./src/app/components/events/events.service.ts");
-var i53 = __webpack_require__(/*! @angular/animations */ "@angular/animations");
-var i54 = __webpack_require__(/*! @nguniversal/module-map-ngfactory-loader */ "@nguniversal/module-map-ngfactory-loader");
-var i55 = __webpack_require__(/*! ./components/landing/landing.component */ "./src/app/components/landing/landing.component.ts");
-var i56 = __webpack_require__(/*! ./components/courses/maincourse/maincourse.component */ "./src/app/components/courses/maincourse/maincourse.component.ts");
-var i57 = __webpack_require__(/*! ./components/programs/programs.component */ "./src/app/components/programs/programs.component.ts");
-var i58 = __webpack_require__(/*! ./components/programs/program/program.component */ "./src/app/components/programs/program/program.component.ts");
-var i59 = __webpack_require__(/*! ./components/blog/blog.component */ "./src/app/components/blog/blog.component.ts");
-var i60 = __webpack_require__(/*! ./components/blog/blog-detail/blog-detail.component */ "./src/app/components/blog/blog-detail/blog-detail.component.ts");
-var i61 = __webpack_require__(/*! ./components/events/events.component */ "./src/app/components/events/events.component.ts");
-var i62 = __webpack_require__(/*! ./components/events/event/event.component */ "./src/app/components/events/event/event.component.ts");
-var i63 = __webpack_require__(/*! ./components/contactus/contactus.component */ "./src/app/components/contactus/contactus.component.ts");
-var i64 = __webpack_require__(/*! ./components/thankyoupage/thankyoupage.component */ "./src/app/components/thankyoupage/thankyoupage.component.ts");
-var i65 = __webpack_require__(/*! ./components/courses/devopscourse/devopscourse.component */ "./src/app/components/courses/devopscourse/devopscourse.component.ts");
-var i66 = __webpack_require__(/*! ./components/courses/azurecourse/azurecourse.component */ "./src/app/components/courses/azurecourse/azurecourse.component.ts");
-var i67 = __webpack_require__(/*! ./components/courses/pythoncourse/pythoncourse.component */ "./src/app/components/courses/pythoncourse/pythoncourse.component.ts");
-var i68 = __webpack_require__(/*! ./components/courses/bigdatacourse/bigdatacourse.component */ "./src/app/components/courses/bigdatacourse/bigdatacourse.component.ts");
-var i69 = __webpack_require__(/*! ./components/courses/dataanalysiscourse/dataanalysiscourse.component */ "./src/app/components/courses/dataanalysiscourse/dataanalysiscourse.component.ts");
-var i70 = __webpack_require__(/*! ./components/courses/digitalmarketingcourse/digitalmarketingcourse.component */ "./src/app/components/courses/digitalmarketingcourse/digitalmarketingcourse.component.ts");
-var i71 = __webpack_require__(/*! ./components/courses/animationcourse/animationcourse.component */ "./src/app/components/courses/animationcourse/animationcourse.component.ts");
-var i72 = __webpack_require__(/*! ./components/courses/iotcourse/iotcourse.component */ "./src/app/components/courses/iotcourse/iotcourse.component.ts");
-var i73 = __webpack_require__(/*! ./components/courses/awscourse/awscourse.component */ "./src/app/components/courses/awscourse/awscourse.component.ts");
-var i74 = __webpack_require__(/*! ./components/courses/fullstackcourse/fullstackcourse.component */ "./src/app/components/courses/fullstackcourse/fullstackcourse.component.ts");
-var i75 = __webpack_require__(/*! ./components/courses/datasciencecourse/datasciencecourse.component */ "./src/app/components/courses/datasciencecourse/datasciencecourse.component.ts");
-var i76 = __webpack_require__(/*! ./components/courses/artificialintelligencecourse/artificialintelligencecourse.component */ "./src/app/components/courses/artificialintelligencecourse/artificialintelligencecourse.component.ts");
-var i77 = __webpack_require__(/*! ./components/courses/blockchaincourse/blockchaincourse.component */ "./src/app/components/courses/blockchaincourse/blockchaincourse.component.ts");
-var i78 = __webpack_require__(/*! ./components/courses/gamedevelopmentcourse/gamedevelopmentcourse.component */ "./src/app/components/courses/gamedevelopmentcourse/gamedevelopmentcourse.component.ts");
-var i79 = __webpack_require__(/*! ./components/courses/graphicdesigncourse/graphicdesigncourse.component */ "./src/app/components/courses/graphicdesigncourse/graphicdesigncourse.component.ts");
-var i80 = __webpack_require__(/*! ./components/courses/uiuxcourse/uiuxcourse.component */ "./src/app/components/courses/uiuxcourse/uiuxcourse.component.ts");
-var i81 = __webpack_require__(/*! ./components/courses/servicenow-system-admin/servicenow-system-admin.component */ "./src/app/components/courses/servicenow-system-admin/servicenow-system-admin.component.ts");
-var i82 = __webpack_require__(/*! ./components/programs/features/placement/placement.component */ "./src/app/components/programs/features/placement/placement.component.ts");
-var i83 = __webpack_require__(/*! ./components/programs/features/academic/academic.component */ "./src/app/components/programs/features/academic/academic.component.ts");
-var i84 = __webpack_require__(/*! ./components/programs/features/onlyatdigitallync/onlyatdigitallync.component */ "./src/app/components/programs/features/onlyatdigitallync/onlyatdigitallync.component.ts");
-var i85 = __webpack_require__(/*! ./components/programs/features/futuredegrees/futuredegrees.component */ "./src/app/components/programs/features/futuredegrees/futuredegrees.component.ts");
-var i86 = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-var i87 = __webpack_require__(/*! ./shared/shared.module */ "./src/app/shared/shared.module.ts");
-var i88 = __webpack_require__(/*! ./app.module */ "./src/app/app.module.ts");
-var AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.LandingComponentNgFactory, i4.MaincourseComponentNgFactory, i5.ProgramsComponentNgFactory, i6.ProgramComponentNgFactory, i7.BlogComponentNgFactory, i8.BlogDetailComponentNgFactory, i9.EventsComponentNgFactory, i10.EventComponentNgFactory, i11.ContactusComponentNgFactory, i12.ThankyoupageComponentNgFactory, i13.DevopscourseComponentNgFactory, i14.AzurecourseComponentNgFactory, i15.PythoncourseComponentNgFactory, i16.BigdatacourseComponentNgFactory, i17.DataanalysiscourseComponentNgFactory, i18.DigitalmarketingcourseComponentNgFactory, i19.AnimationcourseComponentNgFactory, i20.IotcourseComponentNgFactory, i21.AwscourseComponentNgFactory, i22.FullstackcourseComponentNgFactory, i23.DatasciencecourseComponentNgFactory, i24.ArtificialintelligencecourseComponentNgFactory, i25.BlockchaincourseComponentNgFactory, i26.GamedevelopmentcourseComponentNgFactory, i27.GraphicdesigncourseComponentNgFactory, i28.UiuxcourseComponentNgFactory, i29.ServiceNowSystemAdminComponentNgFactory, i30.PlacementComponentNgFactory, i31.AcademicComponentNgFactory, i32.OnlyatdigitallyncComponentNgFactory, i33.FuturedegreesComponentNgFactory, i34.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵangular_packages_core_core_l, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i35.NgLocalization, i35.NgLocaleLocalization, [i0.LOCALE_ID, [2, i35.ɵangular_packages_common_common_a]]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵangular_packages_core_core_j, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵangular_packages_core_core_k, []), i0.ɵmpd(4608, i36.DomSanitizer, i36.ɵangular_packages_platform_browser_platform_browser_e, [i35.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i36.DomSanitizer]), i0.ɵmpd(4608, i36.HAMMER_GESTURE_CONFIG, i36.HammerGestureConfig, []), i0.ɵmpd(5120, i36.EVENT_MANAGER_PLUGINS, function (p0_0, p0_1, p1_0, p2_0, p2_1, p2_2) { return [new i36.ɵDomEventsPlugin(p0_0, p0_1), new i36.ɵKeyEventsPlugin(p1_0), new i36.ɵHammerGesturesPlugin(p2_0, p2_1, p2_2)]; }, [i35.DOCUMENT, i0.NgZone, i35.DOCUMENT, i35.DOCUMENT, i36.HAMMER_GESTURE_CONFIG, i0.ɵConsole]), i0.ɵmpd(4608, i36.EventManager, i36.EventManager, [i36.EVENT_MANAGER_PLUGINS, i0.NgZone]), i0.ɵmpd(135680, i36.ɵDomSharedStylesHost, i36.ɵDomSharedStylesHost, [i35.DOCUMENT]), i0.ɵmpd(4608, i36.ɵDomRendererFactory2, i36.ɵDomRendererFactory2, [i36.EventManager, i36.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i37.ɵangular_packages_platform_server_platform_server_c, i37.ɵangular_packages_platform_server_platform_server_c, [i36.DOCUMENT, [2, i36.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i36.ɵSharedStylesHost, null, [i37.ɵangular_packages_platform_server_platform_server_c]), i0.ɵmpd(4608, i37.ɵServerRendererFactory2, i37.ɵServerRendererFactory2, [i0.NgZone, i36.DOCUMENT, i36.ɵSharedStylesHost]), i0.ɵmpd(4608, i38.AnimationDriver, i38.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i38.ɵAnimationStyleNormalizer, i39.ɵangular_packages_platform_browser_animations_animations_c, []), i0.ɵmpd(4608, i38.ɵAnimationEngine, i39.ɵangular_packages_platform_browser_animations_animations_a, [i38.AnimationDriver, i38.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i37.ɵangular_packages_platform_server_platform_server_a, [i37.ɵServerRendererFactory2, i38.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i36.Meta, i36.Meta, [i35.DOCUMENT]), i0.ɵmpd(4608, i36.Title, i36.Title, [i35.DOCUMENT]), i0.ɵmpd(4608, i40.ɵangular_packages_forms_forms_i, i40.ɵangular_packages_forms_forms_i, []), i0.ɵmpd(5120, i41.ActivatedRoute, i41.ɵangular_packages_router_router_f, [i41.Router]), i0.ɵmpd(4608, i41.NoPreloading, i41.NoPreloading, []), i0.ɵmpd(6144, i41.PreloadingStrategy, null, [i41.NoPreloading]), i0.ɵmpd(135680, i41.RouterPreloader, i41.RouterPreloader, [i41.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i41.PreloadingStrategy]), i0.ɵmpd(4608, i41.PreloadAllModules, i41.PreloadAllModules, []), i0.ɵmpd(5120, i41.ROUTER_INITIALIZER, i41.ɵangular_packages_router_router_i, [i41.ɵangular_packages_router_router_g]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i41.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i42.HttpXsrfTokenExtractor, i42.ɵangular_packages_common_http_http_h, [i35.DOCUMENT, i0.PLATFORM_ID, i42.ɵangular_packages_common_http_http_f]), i0.ɵmpd(4608, i42.ɵangular_packages_common_http_http_i, i42.ɵangular_packages_common_http_http_i, [i42.HttpXsrfTokenExtractor, i42.ɵangular_packages_common_http_http_g]), i0.ɵmpd(5120, i42.HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [i42.ɵangular_packages_common_http_http_i]), i0.ɵmpd(4608, i42.XhrFactory, i37.ɵangular_packages_platform_server_platform_server_d, []), i0.ɵmpd(4608, i42.HttpXhrBackend, i42.HttpXhrBackend, [i42.XhrFactory]), i0.ɵmpd(6144, i42.HttpBackend, null, [i42.HttpXhrBackend]), i0.ɵmpd(5120, i42.HttpHandler, i37.ɵangular_packages_platform_server_platform_server_g, [i42.HttpBackend, [2, i42.HTTP_INTERCEPTORS]]), i0.ɵmpd(4608, i42.HttpClient, i42.HttpClient, [i42.HttpHandler]), i0.ɵmpd(4608, i42.ɵangular_packages_common_http_http_e, i42.ɵangular_packages_common_http_http_e, []), i0.ɵmpd(4608, i40.FormBuilder, i40.FormBuilder, []), i0.ɵmpd(4608, i43.BrowserXhr, i37.ɵangular_packages_platform_server_platform_server_d, []), i0.ɵmpd(4608, i43.ResponseOptions, i43.BaseResponseOptions, []), i0.ɵmpd(4608, i43.XSRFStrategy, i37.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i43.XHRBackend, i43.XHRBackend, [i43.BrowserXhr, i43.ResponseOptions, i43.XSRFStrategy]), i0.ɵmpd(4608, i43.RequestOptions, i43.BaseRequestOptions, []), i0.ɵmpd(5120, i43.Http, i37.ɵangular_packages_platform_server_platform_server_f, [i43.XHRBackend, i43.RequestOptions]), i0.ɵmpd(4608, i44.ApexService, i44.ApexService, [i36.DomSanitizer]), i0.ɵmpd(4608, i45.FooterService, i45.FooterService, [i42.HttpClient, i41.Router, i41.ActivatedRoute]), i0.ɵmpd(4608, i46.WindowRef, i46.BrowserWindowRef, []), i0.ɵmpd(5120, i46.WINDOW, i46.windowFactory, [i46.WindowRef, i0.PLATFORM_ID]), i0.ɵmpd(4608, i47.CoursesService, i47.CoursesService, [i42.HttpClient, i41.Router, i41.ActivatedRoute]), i0.ɵmpd(4608, i48.ThankyouService, i48.ThankyouService, [i42.HttpClient, i41.Router, i41.ActivatedRoute]), i0.ɵmpd(4608, i49.ProgramsService, i49.ProgramsService, [i42.HttpClient, i41.Router, i41.ActivatedRoute]), i0.ɵmpd(4608, i50.HeaderService, i50.HeaderService, [i42.HttpClient, i41.Router, i41.ActivatedRoute]), i0.ɵmpd(4608, i51.BlogService, i51.BlogService, [i42.HttpClient, i41.Router, i41.ActivatedRoute]), i0.ɵmpd(4608, i52.EventsService, i52.EventsService, [i42.HttpClient, i41.Router, i41.ActivatedRoute]), i0.ɵmpd(4608, i53.AnimationBuilder, i39.ɵBrowserAnimationBuilder, [i0.RendererFactory2, i36.DOCUMENT]), i0.ɵmpd(1073742336, i35.CommonModule, i35.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i36.ɵangular_packages_platform_browser_platform_browser_a, []), i0.ɵmpd(1024, i0.NgProbeToken, function () { return [i41.ɵangular_packages_router_router_b()]; }, []), i0.ɵmpd(512, i41.ɵangular_packages_router_router_g, i41.ɵangular_packages_router_router_g, [i0.Injector]), i0.ɵmpd(256, i0.APP_ID, "digital-lync", []), i0.ɵmpd(2048, i36.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p2_0, p2_1, p2_2) { return [i36.ɵangular_packages_platform_browser_platform_browser_h(p0_0), i41.ɵangular_packages_router_router_h(p1_0), i36.ɵangular_packages_platform_browser_platform_browser_f(p2_0, p2_1, p2_2)]; }, [[2, i0.NgProbeToken], i41.ɵangular_packages_router_router_g, i36.ɵTRANSITION_ID, i35.DOCUMENT, i0.Injector]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(1073742336, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(1073742336, i36.BrowserModule, i36.BrowserModule, [[3, i36.BrowserModule]]), i0.ɵmpd(1073742336, i40.ɵangular_packages_forms_forms_bb, i40.ɵangular_packages_forms_forms_bb, []), i0.ɵmpd(1073742336, i40.FormsModule, i40.FormsModule, []), i0.ɵmpd(1024, i41.ɵangular_packages_router_router_a, i41.ɵangular_packages_router_router_d, [[3, i41.Router]]), i0.ɵmpd(512, i41.UrlSerializer, i41.DefaultUrlSerializer, []), i0.ɵmpd(512, i41.ChildrenOutletContexts, i41.ChildrenOutletContexts, []), i0.ɵmpd(256, i41.ROUTER_CONFIGURATION, {}, []), i0.ɵmpd(1024, i35.LocationStrategy, i41.ɵangular_packages_router_router_c, [i35.PlatformLocation, [2, i35.APP_BASE_HREF], i41.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i35.Location, i35.Location, [i35.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i54.ModuleMapNgFactoryLoader, [i0.Compiler, i54.MODULE_MAP]), i0.ɵmpd(1024, i41.ROUTES, function () { return [[{ path: "", component: i55.LandingComponent }, { path: "courses", component: i56.MaincourseComponent, children: [{ path: "**", component: i56.MaincourseComponent }] }, { path: "programs", component: i57.ProgramsComponent }, { path: "program/:id", component: i58.ProgramComponent }, { path: "blogs", component: i59.BlogComponent }, { path: "blog/:id", component: i60.BlogDetailComponent }, { path: "blogs", component: i59.BlogComponent }, { path: "blog/:id", component: i60.BlogDetailComponent }, { path: "events", component: i61.EventsComponent, children: [{ path: "**", component: i61.EventsComponent }] }, { path: "event/:id", component: i62.EventComponent }, { path: "connect", component: i63.ContactusComponent, children: [] }, { path: "thankyou", component: i64.ThankyoupageComponent }, { path: "course/devops-course-training-hyderabad", component: i65.DevopscourseComponent }, { path: "course/azure-course-training-hyderabad", component: i66.AzurecourseComponent }, { path: "course/python-course-training-hyderabad", component: i67.PythoncourseComponent }, { path: "course/big-data-course-training-hyderabad", component: i68.BigdatacourseComponent }, { path: "course/data-analysis-course-training-hyderabad", component: i69.DataanalysiscourseComponent }, { path: "course/digital-marketing-course-training-hyderabad", component: i70.DigitalmarketingcourseComponent }, { path: "course/animation-course-training-hyderabad", component: i71.AnimationcourseComponent }, { path: "course/iot-course-training-hyderabad", component: i72.IotcourseComponent }, { path: "course/aws-course-training-hyderabad", component: i73.AwscourseComponent }, { path: "course/fullstack-course-training-hyderabad", component: i74.FullstackcourseComponent }, { path: "course/data-science-course-training-hyderabad", component: i75.DatasciencecourseComponent }, { path: "course/artificial-intelligence-course-training-hyderabad", component: i76.ArtificialintelligencecourseComponent }, { path: "course/blockchain-course-training-hyderabad", component: i77.BlockchaincourseComponent }, { path: "course/game-development-course-training-hyderabad", component: i78.GamedevelopmentcourseComponent }, { path: "course/graphic-design-course-training-hyderabad", component: i79.GraphicdesigncourseComponent }, { path: "course/ui-ux-course-training-hyderabad", component: i80.UiuxcourseComponent }, { path: "course/servicenow-system-admin-course-training-hyderabad", component: i81.ServiceNowSystemAdminComponent }, { path: "Placements", component: i82.PlacementComponent }, { path: "Academic", component: i83.AcademicComponent }, { path: "other", component: i84.OnlyatdigitallyncComponent }, { path: "Future", component: i85.FuturedegreesComponent }]]; }, []), i0.ɵmpd(1024, i41.Router, i41.ɵangular_packages_router_router_e, [i0.ApplicationRef, i41.UrlSerializer, i41.ChildrenOutletContexts, i35.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i41.ROUTES, i41.ROUTER_CONFIGURATION, [2, i41.UrlHandlingStrategy], [2, i41.RouteReuseStrategy]]), i0.ɵmpd(1073742336, i41.RouterModule, i41.RouterModule, [[2, i41.ɵangular_packages_router_router_a], [2, i41.Router]]), i0.ɵmpd(1073742336, i86.AppRoutingModule, i86.AppRoutingModule, []), i0.ɵmpd(1073742336, i42.HttpClientXsrfModule, i42.HttpClientXsrfModule, []), i0.ɵmpd(1073742336, i42.HttpClientModule, i42.HttpClientModule, []), i0.ɵmpd(1073742336, i40.ReactiveFormsModule, i40.ReactiveFormsModule, []), i0.ɵmpd(1073742336, i87.SharedModule, i87.SharedModule, []), i0.ɵmpd(1073742336, i43.HttpModule, i43.HttpModule, []), i0.ɵmpd(1073742336, i88.AppModule, i88.AppModule, [i0.PLATFORM_ID, i0.APP_ID]), i0.ɵmpd(1073742336, i39.NoopAnimationsModule, i39.NoopAnimationsModule, []), i0.ɵmpd(1073742336, i37.ServerModule, i37.ServerModule, []), i0.ɵmpd(1073742336, i54.ModuleMapLoaderModule, i54.ModuleMapLoaderModule, []), i0.ɵmpd(1073742336, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i0.ɵAPP_ROOT, true, []), i0.ɵmpd(256, i42.ɵangular_packages_common_http_http_f, "XSRF-TOKEN", []), i0.ɵmpd(256, i42.ɵangular_packages_common_http_http_g, "X-XSRF-TOKEN", []), i0.ɵmpd(256, i39.ANIMATION_MODULE_TYPE, "NoopAnimations", [])]); });
+var i30 = __webpack_require__(/*! ./components/courses/salesforce/salesforce.component.ngfactory */ "./src/app/components/courses/salesforce/salesforce.component.ngfactory.js");
+var i31 = __webpack_require__(/*! ./components/programs/features/placement/placement.component.ngfactory */ "./src/app/components/programs/features/placement/placement.component.ngfactory.js");
+var i32 = __webpack_require__(/*! ./components/programs/features/academic/academic.component.ngfactory */ "./src/app/components/programs/features/academic/academic.component.ngfactory.js");
+var i33 = __webpack_require__(/*! ./components/programs/features/onlyatdigitallync/onlyatdigitallync.component.ngfactory */ "./src/app/components/programs/features/onlyatdigitallync/onlyatdigitallync.component.ngfactory.js");
+var i34 = __webpack_require__(/*! ./components/programs/features/futuredegrees/futuredegrees.component.ngfactory */ "./src/app/components/programs/features/futuredegrees/futuredegrees.component.ngfactory.js");
+var i35 = __webpack_require__(/*! ./components/membership/gold/gold.component.ngfactory */ "./src/app/components/membership/gold/gold.component.ngfactory.js");
+var i36 = __webpack_require__(/*! ./components/membership/silver/silver.component.ngfactory */ "./src/app/components/membership/silver/silver.component.ngfactory.js");
+var i37 = __webpack_require__(/*! ./components/membership/platinum/platinum.component.ngfactory */ "./src/app/components/membership/platinum/platinum.component.ngfactory.js");
+var i38 = __webpack_require__(/*! ./app.component.ngfactory */ "./src/app/app.component.ngfactory.js");
+var i39 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i40 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i41 = __webpack_require__(/*! @angular/platform-server */ "@angular/platform-server");
+var i42 = __webpack_require__(/*! @angular/animations/browser */ "@angular/animations/browser");
+var i43 = __webpack_require__(/*! @angular/platform-browser/animations */ "@angular/platform-browser/animations");
+var i44 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
+var i45 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i46 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
+var i47 = __webpack_require__(/*! @angular/http */ "@angular/http");
+var i48 = __webpack_require__(/*! ./shared/service/apex.service */ "./src/app/shared/service/apex.service.ts");
+var i49 = __webpack_require__(/*! ./components/footer/footer.service */ "./src/app/components/footer/footer.service.ts");
+var i50 = __webpack_require__(/*! ./services/window.service */ "./src/app/services/window.service.ts");
+var i51 = __webpack_require__(/*! ./components/courses/courses.service */ "./src/app/components/courses/courses.service.ts");
+var i52 = __webpack_require__(/*! ./components/thankyoupage/thankyou.service */ "./src/app/components/thankyoupage/thankyou.service.ts");
+var i53 = __webpack_require__(/*! ./components/programs/programs.service */ "./src/app/components/programs/programs.service.ts");
+var i54 = __webpack_require__(/*! ./components/header/header.service */ "./src/app/components/header/header.service.ts");
+var i55 = __webpack_require__(/*! ./components/blog/blog.service */ "./src/app/components/blog/blog.service.ts");
+var i56 = __webpack_require__(/*! ./components/events/events.service */ "./src/app/components/events/events.service.ts");
+var i57 = __webpack_require__(/*! @angular/animations */ "@angular/animations");
+var i58 = __webpack_require__(/*! @nguniversal/module-map-ngfactory-loader */ "@nguniversal/module-map-ngfactory-loader");
+var i59 = __webpack_require__(/*! ./components/landing/landing.component */ "./src/app/components/landing/landing.component.ts");
+var i60 = __webpack_require__(/*! ./components/courses/maincourse/maincourse.component */ "./src/app/components/courses/maincourse/maincourse.component.ts");
+var i61 = __webpack_require__(/*! ./components/programs/programs.component */ "./src/app/components/programs/programs.component.ts");
+var i62 = __webpack_require__(/*! ./components/programs/program/program.component */ "./src/app/components/programs/program/program.component.ts");
+var i63 = __webpack_require__(/*! ./components/blog/blog.component */ "./src/app/components/blog/blog.component.ts");
+var i64 = __webpack_require__(/*! ./components/blog/blog-detail/blog-detail.component */ "./src/app/components/blog/blog-detail/blog-detail.component.ts");
+var i65 = __webpack_require__(/*! ./components/events/events.component */ "./src/app/components/events/events.component.ts");
+var i66 = __webpack_require__(/*! ./components/events/event/event.component */ "./src/app/components/events/event/event.component.ts");
+var i67 = __webpack_require__(/*! ./components/contactus/contactus.component */ "./src/app/components/contactus/contactus.component.ts");
+var i68 = __webpack_require__(/*! ./components/thankyoupage/thankyoupage.component */ "./src/app/components/thankyoupage/thankyoupage.component.ts");
+var i69 = __webpack_require__(/*! ./components/courses/devopscourse/devopscourse.component */ "./src/app/components/courses/devopscourse/devopscourse.component.ts");
+var i70 = __webpack_require__(/*! ./components/courses/azurecourse/azurecourse.component */ "./src/app/components/courses/azurecourse/azurecourse.component.ts");
+var i71 = __webpack_require__(/*! ./components/courses/pythoncourse/pythoncourse.component */ "./src/app/components/courses/pythoncourse/pythoncourse.component.ts");
+var i72 = __webpack_require__(/*! ./components/courses/bigdatacourse/bigdatacourse.component */ "./src/app/components/courses/bigdatacourse/bigdatacourse.component.ts");
+var i73 = __webpack_require__(/*! ./components/courses/dataanalysiscourse/dataanalysiscourse.component */ "./src/app/components/courses/dataanalysiscourse/dataanalysiscourse.component.ts");
+var i74 = __webpack_require__(/*! ./components/courses/digitalmarketingcourse/digitalmarketingcourse.component */ "./src/app/components/courses/digitalmarketingcourse/digitalmarketingcourse.component.ts");
+var i75 = __webpack_require__(/*! ./components/courses/animationcourse/animationcourse.component */ "./src/app/components/courses/animationcourse/animationcourse.component.ts");
+var i76 = __webpack_require__(/*! ./components/courses/iotcourse/iotcourse.component */ "./src/app/components/courses/iotcourse/iotcourse.component.ts");
+var i77 = __webpack_require__(/*! ./components/courses/awscourse/awscourse.component */ "./src/app/components/courses/awscourse/awscourse.component.ts");
+var i78 = __webpack_require__(/*! ./components/courses/fullstackcourse/fullstackcourse.component */ "./src/app/components/courses/fullstackcourse/fullstackcourse.component.ts");
+var i79 = __webpack_require__(/*! ./components/courses/datasciencecourse/datasciencecourse.component */ "./src/app/components/courses/datasciencecourse/datasciencecourse.component.ts");
+var i80 = __webpack_require__(/*! ./components/courses/artificialintelligencecourse/artificialintelligencecourse.component */ "./src/app/components/courses/artificialintelligencecourse/artificialintelligencecourse.component.ts");
+var i81 = __webpack_require__(/*! ./components/courses/blockchaincourse/blockchaincourse.component */ "./src/app/components/courses/blockchaincourse/blockchaincourse.component.ts");
+var i82 = __webpack_require__(/*! ./components/courses/gamedevelopmentcourse/gamedevelopmentcourse.component */ "./src/app/components/courses/gamedevelopmentcourse/gamedevelopmentcourse.component.ts");
+var i83 = __webpack_require__(/*! ./components/courses/graphicdesigncourse/graphicdesigncourse.component */ "./src/app/components/courses/graphicdesigncourse/graphicdesigncourse.component.ts");
+var i84 = __webpack_require__(/*! ./components/courses/uiuxcourse/uiuxcourse.component */ "./src/app/components/courses/uiuxcourse/uiuxcourse.component.ts");
+var i85 = __webpack_require__(/*! ./components/courses/servicenow-system-admin/servicenow-system-admin.component */ "./src/app/components/courses/servicenow-system-admin/servicenow-system-admin.component.ts");
+var i86 = __webpack_require__(/*! ./components/courses/salesforce/salesforce.component */ "./src/app/components/courses/salesforce/salesforce.component.ts");
+var i87 = __webpack_require__(/*! ./components/programs/features/placement/placement.component */ "./src/app/components/programs/features/placement/placement.component.ts");
+var i88 = __webpack_require__(/*! ./components/programs/features/academic/academic.component */ "./src/app/components/programs/features/academic/academic.component.ts");
+var i89 = __webpack_require__(/*! ./components/programs/features/onlyatdigitallync/onlyatdigitallync.component */ "./src/app/components/programs/features/onlyatdigitallync/onlyatdigitallync.component.ts");
+var i90 = __webpack_require__(/*! ./components/programs/features/futuredegrees/futuredegrees.component */ "./src/app/components/programs/features/futuredegrees/futuredegrees.component.ts");
+var i91 = __webpack_require__(/*! ./components/membership/gold/gold.component */ "./src/app/components/membership/gold/gold.component.ts");
+var i92 = __webpack_require__(/*! ./components/membership/silver/silver.component */ "./src/app/components/membership/silver/silver.component.ts");
+var i93 = __webpack_require__(/*! ./components/membership/platinum/platinum.component */ "./src/app/components/membership/platinum/platinum.component.ts");
+var i94 = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+var i95 = __webpack_require__(/*! ./shared/shared.module */ "./src/app/shared/shared.module.ts");
+var i96 = __webpack_require__(/*! ./app.module */ "./src/app/app.module.ts");
+var AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.LandingComponentNgFactory, i4.MaincourseComponentNgFactory, i5.ProgramsComponentNgFactory, i6.ProgramComponentNgFactory, i7.BlogComponentNgFactory, i8.BlogDetailComponentNgFactory, i9.EventsComponentNgFactory, i10.EventComponentNgFactory, i11.ContactusComponentNgFactory, i12.ThankyoupageComponentNgFactory, i13.DevopscourseComponentNgFactory, i14.AzurecourseComponentNgFactory, i15.PythoncourseComponentNgFactory, i16.BigdatacourseComponentNgFactory, i17.DataanalysiscourseComponentNgFactory, i18.DigitalmarketingcourseComponentNgFactory, i19.AnimationcourseComponentNgFactory, i20.IotcourseComponentNgFactory, i21.AwscourseComponentNgFactory, i22.FullstackcourseComponentNgFactory, i23.DatasciencecourseComponentNgFactory, i24.ArtificialintelligencecourseComponentNgFactory, i25.BlockchaincourseComponentNgFactory, i26.GamedevelopmentcourseComponentNgFactory, i27.GraphicdesigncourseComponentNgFactory, i28.UiuxcourseComponentNgFactory, i29.ServiceNowSystemAdminComponentNgFactory, i30.SalesforceComponentNgFactory, i31.PlacementComponentNgFactory, i32.AcademicComponentNgFactory, i33.OnlyatdigitallyncComponentNgFactory, i34.FuturedegreesComponentNgFactory, i35.GoldComponentNgFactory, i36.SilverComponentNgFactory, i37.PlatinumComponentNgFactory, i38.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵangular_packages_core_core_l, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i39.NgLocalization, i39.NgLocaleLocalization, [i0.LOCALE_ID, [2, i39.ɵangular_packages_common_common_a]]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵangular_packages_core_core_j, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵangular_packages_core_core_k, []), i0.ɵmpd(4608, i40.DomSanitizer, i40.ɵangular_packages_platform_browser_platform_browser_e, [i39.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i40.DomSanitizer]), i0.ɵmpd(4608, i40.HAMMER_GESTURE_CONFIG, i40.HammerGestureConfig, []), i0.ɵmpd(5120, i40.EVENT_MANAGER_PLUGINS, function (p0_0, p0_1, p1_0, p2_0, p2_1, p2_2) { return [new i40.ɵDomEventsPlugin(p0_0, p0_1), new i40.ɵKeyEventsPlugin(p1_0), new i40.ɵHammerGesturesPlugin(p2_0, p2_1, p2_2)]; }, [i39.DOCUMENT, i0.NgZone, i39.DOCUMENT, i39.DOCUMENT, i40.HAMMER_GESTURE_CONFIG, i0.ɵConsole]), i0.ɵmpd(4608, i40.EventManager, i40.EventManager, [i40.EVENT_MANAGER_PLUGINS, i0.NgZone]), i0.ɵmpd(135680, i40.ɵDomSharedStylesHost, i40.ɵDomSharedStylesHost, [i39.DOCUMENT]), i0.ɵmpd(4608, i40.ɵDomRendererFactory2, i40.ɵDomRendererFactory2, [i40.EventManager, i40.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i41.ɵangular_packages_platform_server_platform_server_c, i41.ɵangular_packages_platform_server_platform_server_c, [i40.DOCUMENT, [2, i40.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i40.ɵSharedStylesHost, null, [i41.ɵangular_packages_platform_server_platform_server_c]), i0.ɵmpd(4608, i41.ɵServerRendererFactory2, i41.ɵServerRendererFactory2, [i0.NgZone, i40.DOCUMENT, i40.ɵSharedStylesHost]), i0.ɵmpd(4608, i42.AnimationDriver, i42.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i42.ɵAnimationStyleNormalizer, i43.ɵangular_packages_platform_browser_animations_animations_c, []), i0.ɵmpd(4608, i42.ɵAnimationEngine, i43.ɵangular_packages_platform_browser_animations_animations_a, [i42.AnimationDriver, i42.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i41.ɵangular_packages_platform_server_platform_server_a, [i41.ɵServerRendererFactory2, i42.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i40.Meta, i40.Meta, [i39.DOCUMENT]), i0.ɵmpd(4608, i40.Title, i40.Title, [i39.DOCUMENT]), i0.ɵmpd(4608, i44.ɵangular_packages_forms_forms_i, i44.ɵangular_packages_forms_forms_i, []), i0.ɵmpd(5120, i45.ActivatedRoute, i45.ɵangular_packages_router_router_f, [i45.Router]), i0.ɵmpd(4608, i45.NoPreloading, i45.NoPreloading, []), i0.ɵmpd(6144, i45.PreloadingStrategy, null, [i45.NoPreloading]), i0.ɵmpd(135680, i45.RouterPreloader, i45.RouterPreloader, [i45.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i45.PreloadingStrategy]), i0.ɵmpd(4608, i45.PreloadAllModules, i45.PreloadAllModules, []), i0.ɵmpd(5120, i45.ROUTER_INITIALIZER, i45.ɵangular_packages_router_router_i, [i45.ɵangular_packages_router_router_g]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i45.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i46.HttpXsrfTokenExtractor, i46.ɵangular_packages_common_http_http_h, [i39.DOCUMENT, i0.PLATFORM_ID, i46.ɵangular_packages_common_http_http_f]), i0.ɵmpd(4608, i46.ɵangular_packages_common_http_http_i, i46.ɵangular_packages_common_http_http_i, [i46.HttpXsrfTokenExtractor, i46.ɵangular_packages_common_http_http_g]), i0.ɵmpd(5120, i46.HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [i46.ɵangular_packages_common_http_http_i]), i0.ɵmpd(4608, i46.XhrFactory, i41.ɵangular_packages_platform_server_platform_server_d, []), i0.ɵmpd(4608, i46.HttpXhrBackend, i46.HttpXhrBackend, [i46.XhrFactory]), i0.ɵmpd(6144, i46.HttpBackend, null, [i46.HttpXhrBackend]), i0.ɵmpd(5120, i46.HttpHandler, i41.ɵangular_packages_platform_server_platform_server_g, [i46.HttpBackend, [2, i46.HTTP_INTERCEPTORS]]), i0.ɵmpd(4608, i46.HttpClient, i46.HttpClient, [i46.HttpHandler]), i0.ɵmpd(4608, i46.ɵangular_packages_common_http_http_e, i46.ɵangular_packages_common_http_http_e, []), i0.ɵmpd(4608, i44.FormBuilder, i44.FormBuilder, []), i0.ɵmpd(4608, i47.BrowserXhr, i41.ɵangular_packages_platform_server_platform_server_d, []), i0.ɵmpd(4608, i47.ResponseOptions, i47.BaseResponseOptions, []), i0.ɵmpd(4608, i47.XSRFStrategy, i41.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i47.XHRBackend, i47.XHRBackend, [i47.BrowserXhr, i47.ResponseOptions, i47.XSRFStrategy]), i0.ɵmpd(4608, i47.RequestOptions, i47.BaseRequestOptions, []), i0.ɵmpd(5120, i47.Http, i41.ɵangular_packages_platform_server_platform_server_f, [i47.XHRBackend, i47.RequestOptions]), i0.ɵmpd(4608, i48.ApexService, i48.ApexService, [i40.DomSanitizer]), i0.ɵmpd(4608, i49.FooterService, i49.FooterService, [i46.HttpClient, i45.Router, i45.ActivatedRoute]), i0.ɵmpd(4608, i50.WindowRef, i50.BrowserWindowRef, []), i0.ɵmpd(5120, i50.WINDOW, i50.windowFactory, [i50.WindowRef, i0.PLATFORM_ID]), i0.ɵmpd(4608, i51.CoursesService, i51.CoursesService, [i46.HttpClient, i45.Router, i45.ActivatedRoute]), i0.ɵmpd(4608, i52.ThankyouService, i52.ThankyouService, [i46.HttpClient, i45.Router, i45.ActivatedRoute]), i0.ɵmpd(4608, i53.ProgramsService, i53.ProgramsService, [i46.HttpClient, i45.Router, i45.ActivatedRoute]), i0.ɵmpd(4608, i54.HeaderService, i54.HeaderService, [i46.HttpClient, i45.Router, i45.ActivatedRoute]), i0.ɵmpd(4608, i55.BlogService, i55.BlogService, [i46.HttpClient, i45.Router, i45.ActivatedRoute]), i0.ɵmpd(4608, i56.EventsService, i56.EventsService, [i46.HttpClient, i45.Router, i45.ActivatedRoute]), i0.ɵmpd(4608, i57.AnimationBuilder, i43.ɵBrowserAnimationBuilder, [i0.RendererFactory2, i40.DOCUMENT]), i0.ɵmpd(1073742336, i39.CommonModule, i39.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i40.ɵangular_packages_platform_browser_platform_browser_a, []), i0.ɵmpd(1024, i0.NgProbeToken, function () { return [i45.ɵangular_packages_router_router_b()]; }, []), i0.ɵmpd(512, i45.ɵangular_packages_router_router_g, i45.ɵangular_packages_router_router_g, [i0.Injector]), i0.ɵmpd(256, i0.APP_ID, "digital-lync", []), i0.ɵmpd(2048, i40.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p2_0, p2_1, p2_2) { return [i40.ɵangular_packages_platform_browser_platform_browser_h(p0_0), i45.ɵangular_packages_router_router_h(p1_0), i40.ɵangular_packages_platform_browser_platform_browser_f(p2_0, p2_1, p2_2)]; }, [[2, i0.NgProbeToken], i45.ɵangular_packages_router_router_g, i40.ɵTRANSITION_ID, i39.DOCUMENT, i0.Injector]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(1073742336, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(1073742336, i40.BrowserModule, i40.BrowserModule, [[3, i40.BrowserModule]]), i0.ɵmpd(1073742336, i44.ɵangular_packages_forms_forms_bb, i44.ɵangular_packages_forms_forms_bb, []), i0.ɵmpd(1073742336, i44.FormsModule, i44.FormsModule, []), i0.ɵmpd(1024, i45.ɵangular_packages_router_router_a, i45.ɵangular_packages_router_router_d, [[3, i45.Router]]), i0.ɵmpd(512, i45.UrlSerializer, i45.DefaultUrlSerializer, []), i0.ɵmpd(512, i45.ChildrenOutletContexts, i45.ChildrenOutletContexts, []), i0.ɵmpd(256, i45.ROUTER_CONFIGURATION, { onSameUrlNavigation: "reload" }, []), i0.ɵmpd(1024, i39.LocationStrategy, i45.ɵangular_packages_router_router_c, [i39.PlatformLocation, [2, i39.APP_BASE_HREF], i45.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i39.Location, i39.Location, [i39.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i58.ModuleMapNgFactoryLoader, [i0.Compiler, i58.MODULE_MAP]), i0.ɵmpd(1024, i45.ROUTES, function () { return [[{ path: "", component: i59.LandingComponent }, { path: "courses", component: i60.MaincourseComponent, children: [{ path: "**", component: i60.MaincourseComponent }] }, { path: "programs", component: i61.ProgramsComponent }, { path: "program/:id", component: i62.ProgramComponent }, { path: "blogs", component: i63.BlogComponent }, { path: "blog/:id", component: i64.BlogDetailComponent }, { path: "blogs", component: i63.BlogComponent }, { path: "blog/:id", component: i64.BlogDetailComponent }, { path: "events", component: i65.EventsComponent, children: [{ path: "**", component: i65.EventsComponent }] }, { path: "event/:id", component: i66.EventComponent }, { path: "connect", component: i67.ContactusComponent, children: [] }, { path: "thankyou", component: i68.ThankyoupageComponent }, { path: "course/devops-course-training-hyderabad", component: i69.DevopscourseComponent }, { path: "course/azure-course-training-hyderabad", component: i70.AzurecourseComponent }, { path: "course/python-course-training-hyderabad", component: i71.PythoncourseComponent }, { path: "course/big-data-course-training-hyderabad", component: i72.BigdatacourseComponent }, { path: "course/data-analysis-course-training-hyderabad", component: i73.DataanalysiscourseComponent }, { path: "course/digital-marketing-course-training-hyderabad", component: i74.DigitalmarketingcourseComponent }, { path: "course/animation-course-training-hyderabad", component: i75.AnimationcourseComponent }, { path: "course/iot-course-training-hyderabad", component: i76.IotcourseComponent }, { path: "course/aws-course-training-hyderabad", component: i77.AwscourseComponent }, { path: "course/fullstack-course-training-hyderabad", component: i78.FullstackcourseComponent }, { path: "course/data-science-course-training-hyderabad", component: i79.DatasciencecourseComponent }, { path: "course/artificial-intelligence-course-training-hyderabad", component: i80.ArtificialintelligencecourseComponent }, { path: "course/blockchain-course-training-hyderabad", component: i81.BlockchaincourseComponent }, { path: "course/game-development-course-training-hyderabad", component: i82.GamedevelopmentcourseComponent }, { path: "course/graphic-design-course-training-hyderabad", component: i83.GraphicdesigncourseComponent }, { path: "course/ui-ux-course-training-hyderabad", component: i84.UiuxcourseComponent }, { path: "course/servicenow-course-training-hyderabad", component: i85.ServiceNowSystemAdminComponent }, { path: "course/salesforce-course-training-hyderabad", component: i86.SalesforceComponent }, { path: "Placements", component: i87.PlacementComponent }, { path: "Academic", component: i88.AcademicComponent }, { path: "other", component: i89.OnlyatdigitallyncComponent }, { path: "Future", component: i90.FuturedegreesComponent }, { path: "membership/gold-membership", component: i91.GoldComponent }, { path: "membership/silver-membership", component: i92.SilverComponent }, { path: "membership/platinum-membership", component: i93.PlatinumComponent }]]; }, []), i0.ɵmpd(1024, i45.Router, i45.ɵangular_packages_router_router_e, [i0.ApplicationRef, i45.UrlSerializer, i45.ChildrenOutletContexts, i39.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i45.ROUTES, i45.ROUTER_CONFIGURATION, [2, i45.UrlHandlingStrategy], [2, i45.RouteReuseStrategy]]), i0.ɵmpd(1073742336, i45.RouterModule, i45.RouterModule, [[2, i45.ɵangular_packages_router_router_a], [2, i45.Router]]), i0.ɵmpd(1073742336, i94.AppRoutingModule, i94.AppRoutingModule, []), i0.ɵmpd(1073742336, i46.HttpClientXsrfModule, i46.HttpClientXsrfModule, []), i0.ɵmpd(1073742336, i46.HttpClientModule, i46.HttpClientModule, []), i0.ɵmpd(1073742336, i44.ReactiveFormsModule, i44.ReactiveFormsModule, []), i0.ɵmpd(1073742336, i95.SharedModule, i95.SharedModule, []), i0.ɵmpd(1073742336, i47.HttpModule, i47.HttpModule, []), i0.ɵmpd(1073742336, i96.AppModule, i96.AppModule, [i0.PLATFORM_ID, i0.APP_ID]), i0.ɵmpd(1073742336, i43.NoopAnimationsModule, i43.NoopAnimationsModule, []), i0.ɵmpd(1073742336, i41.ServerModule, i41.ServerModule, []), i0.ɵmpd(1073742336, i58.ModuleMapLoaderModule, i58.ModuleMapLoaderModule, []), i0.ɵmpd(1073742336, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i0.ɵAPP_ROOT, true, []), i0.ɵmpd(256, i46.ɵangular_packages_common_http_http_f, "XSRF-TOKEN", []), i0.ɵmpd(256, i46.ɵangular_packages_common_http_http_g, "X-XSRF-TOKEN", []), i0.ɵmpd(256, i43.ANIMATION_MODULE_TYPE, "NoopAnimations", [])]); });
 exports.AppServerModuleNgFactory = AppServerModuleNgFactory;
 
 
@@ -5805,13 +5839,23 @@ var MaincourseComponent = /** @class */ (function () {
                 position: 7,
             },
             {
-                name: "ServiceNow System Admin ",
+                name: "ServiceNow",
                 courseImage: "servicenow.png",
-                courseImageAlt: "ServiceNow System Admin ",
+                courseImageAlt: "ServiceNow",
                 views: 1425,
                 share: 67,
                 rating: 4.7,
-                slug: "servicenow-system-admin-course-training-hyderabad",
+                slug: "servicenow-course-training-hyderabad",
+                position: 7,
+            },
+            {
+                name: "Salesforce",
+                courseImage: "salesforce.png",
+                courseImageAlt: "Salesforce",
+                views: 1425,
+                share: 67,
+                rating: 4.7,
+                slug: "salesforce-course-training-hyderabad",
                 position: 7,
             }
         ];
@@ -6127,6 +6171,310 @@ exports.PythoncourseComponent = PythoncourseComponent;
 
 /***/ }),
 
+/***/ "./src/app/components/courses/salesforce/salesforce.component.ngfactory.js":
+/*!*********************************************************************************!*\
+  !*** ./src/app/components/courses/salesforce/salesforce.component.ngfactory.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./salesforce.component.scss.shim.ngstyle */ "./src/app/components/courses/salesforce/salesforce.component.scss.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i4 = __webpack_require__(/*! ../../batches/batches.component.ngfactory */ "./src/app/components/batches/batches.component.ngfactory.js");
+var i5 = __webpack_require__(/*! ../../batches/batches.component */ "./src/app/components/batches/batches.component.ts");
+var i6 = __webpack_require__(/*! ../courses.service */ "./src/app/components/courses/courses.service.ts");
+var i7 = __webpack_require__(/*! ../../../shared/cards/card-a.component.ngfactory */ "./src/app/shared/cards/card-a.component.ngfactory.js");
+var i8 = __webpack_require__(/*! ../../../shared/cards/card-a.component */ "./src/app/shared/cards/card-a.component.ts");
+var i9 = __webpack_require__(/*! ../../modalpopup/modalpopup.component.ngfactory */ "./src/app/components/modalpopup/modalpopup.component.ngfactory.js");
+var i10 = __webpack_require__(/*! ../../modalpopup/modalpopup.component */ "./src/app/components/modalpopup/modalpopup.component.ts");
+var i11 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
+var i12 = __webpack_require__(/*! ../../reviews/reviews.component.ngfactory */ "./src/app/components/reviews/reviews.component.ngfactory.js");
+var i13 = __webpack_require__(/*! ../../reviews/reviews.component */ "./src/app/components/reviews/reviews.component.ts");
+var i14 = __webpack_require__(/*! ./salesforce.component */ "./src/app/components/courses/salesforce/salesforce.component.ts");
+var i15 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var styles_SalesforceComponent = [i0.styles];
+var RenderType_SalesforceComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_SalesforceComponent, data: {} });
+exports.RenderType_SalesforceComponent = RenderType_SalesforceComponent;
+function View_SalesforceComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 10, "div", [["class", "col-md-12 col-xs-12 block"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 9, "div", [["class", "row Aligner"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 5, "div", [["class", "col-md-6 col-xs-12 Aligner-item"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 4, "div", [["class", "padding10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(5, null, ["", ""])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(7, null, ["", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 2, "div", [["class", "col-md-6 col-xs-12 hidden-xs"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "div", [["class", "padding10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 0, "img", [["class", "img-responsive"]], [[8, "src", 4], [8, "alt", 0]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.name; _ck(_v, 5, 0, currVal_0); var currVal_1 = _v.parent.context.$implicit.description; _ck(_v, 7, 0, currVal_1); var currVal_2 = i1.ɵinlineInterpolate(1, "", _v.parent.context.$implicit.image, ""); var currVal_3 = _v.parent.context.$implicit.imageAlt; _ck(_v, 10, 0, currVal_2, currVal_3); }); }
+function View_SalesforceComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 10, "div", [["class", "col-md-12  col-xs-12 block"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 9, "div", [["class", "row Aligner"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col-md-6 col-xs-12 hidden-xs"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "div", [["class", "padding10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 0, "img", [["class", "img-responsive"]], [[8, "src", 4], [8, "alt", 0]], null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 5, "div", [["class", "col-md-6 col-xs-12 Aligner-item"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 4, "div", [["class", "padding10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(8, null, ["", ""])), (_l()(), i1.ɵeld(9, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(10, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.parent.context.$implicit.image, ""); var currVal_1 = _v.parent.context.$implicit.imageAlt; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_2 = _v.parent.context.$implicit.name; _ck(_v, 8, 0, currVal_2); var currVal_3 = _v.parent.context.$implicit.description; _ck(_v, 10, 0, currVal_3); }); }
+function View_SalesforceComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "row padding10"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SalesforceComponent_3)), i1.ɵdid(2, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SalesforceComponent_4)), i1.ɵdid(4, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var currVal_0 = ((_v.context.index % 2) == 0); _ck(_v, 2, 0, currVal_0); var currVal_1 = ((_v.context.index % 2) !== 0); _ck(_v, 4, 0, currVal_1); }, null); }
+function View_SalesforceComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "section", [["class", "projects padding-top60"], ["id", "3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 4, "div", [["class", "container-fluid"], ["id", "project"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "div", [["class", "col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center project-heading padding10"], ["style", "background-color:#4a90e2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Projects"])), (_l()(), i1.ɵeld(6, 0, null, null, 2, "div", [["class", "container section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SalesforceComponent_2)), i1.ɵdid(8, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.courseData.projects; _ck(_v, 8, 0, currVal_0); }, null); }
+function View_SalesforceComponent_5(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit; _ck(_v, 1, 0, currVal_0); }); }
+function View_SalesforceComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "section", [["class", "course_poster_banner"], ["style", "text-align: center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "div", [["class", "bannerImage"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 14, "section", [["id", "breadcrumb"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 13, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 12, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 11, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 2, "a", [["routerLink", "/"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 7).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(7, 671744, null, 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Home "])), (_l()(), i1.ɵeld(9, 0, null, null, 0, "i", [["class", "fa fa-angle-right"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 2, "a", [["routerLink", "/courses"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 11).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(11, 671744, null, 0, i3.RouterLinkWithHref, [i3.Router, i3.ActivatedRoute, i2.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Courses "])), (_l()(), i1.ɵeld(13, 0, null, null, 0, "i", [["class", "fa fa-angle-right"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 2, "h1", [["class", "font-size-12 slugName"], ["style", "display:inline"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 1, "a", [["class", "captilize-text"]], null, null, null, null, null)), (_l()(), i1.ɵted(16, null, ["", " "])), (_l()(), i1.ɵeld(17, 0, null, null, 41, "section", [["class", "section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 40, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 39, "div", [["class", "card"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 38, "div", [["class", "row"], ["ngFor", ""]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 13, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(22, 0, null, null, 12, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 3, "div", [["class", "col-md-6 col-xs-6 col-lg-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 2, "div", [["class", ""], ["style", "border-left: 2px solid red;height: 100px;margin:20px 20px 20px 28px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "div", [["class", "card-content"], ["style", "height:110px;width:110px; float:left"]], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 0, "img", [["alt", "clock_digitallync"], ["class", "img-responsive"], ["src", "../../../assets/images/courses/digitalmarketingcourse/clock.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(27, 0, null, null, 7, "div", [["class", "col-md-6 col-xs-6 col-lg-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(28, 0, null, null, 6, "div", [["style", "padding:20px 0px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(29, 0, null, null, 1, "p", [["class", "font-weight-bold"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Duration"])), (_l()(), i1.ɵeld(31, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(32, null, ["", ""])), (_l()(), i1.ɵeld(33, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(34, null, ["", " Hours/Week"])), (_l()(), i1.ɵeld(35, 0, null, null, 11, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(36, 0, null, null, 10, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(37, 0, null, null, 3, "div", [["class", "col-md-6 col-xs-6 col-lg-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 2, "div", [["class", ""], ["style", "border-left: 2px solid  #00ae62;height: 100px;margin:20px 20px 20px 28px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 1, "div", [["class", "card-content"], ["style", "height:110px;width:110px; float:left"]], null, null, null, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 0, "img", [["alt", "clock_digitallync"], ["class", "img-responsive"], ["src", "../../../assets/images/courses/devopscourse/pre-requisits.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 5, "div", [["class", "col-md-6 col-xs-6 col-lg-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(42, 0, null, null, 4, "div", [["style", "padding:20px 0px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 1, "p", [["class", "font-weight-bold"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Pre-requisite"])), (_l()(), i1.ɵeld(45, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(46, null, ["", ""])), (_l()(), i1.ɵeld(47, 0, null, null, 11, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(48, 0, null, null, 10, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(49, 0, null, null, 3, "div", [["class", "col-md-6 col-xs-6 col-lg-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 2, "div", [["class", ""], ["style", "border-left: 2px solid #557dbf;height: 100px;margin:20px 20px 20px 28px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(51, 0, null, null, 1, "div", [["class", "card-content"], ["style", "height:110px;width:110px; float:left"]], null, null, null, null, null)), (_l()(), i1.ɵeld(52, 0, null, null, 0, "img", [["alt", "clock_digitallync"], ["class", "img-responsive"], ["src", "../../../assets/images/courses/devopscourse/projects.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(53, 0, null, null, 5, "div", [["class", "col-md-6 col-xs-6 col-lg-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(54, 0, null, null, 4, "div", [["style", "padding:30px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(55, 0, null, null, 1, "p", [["class", "font-weight-bold"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Live Projects"])), (_l()(), i1.ɵeld(57, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["2+"])), (_l()(), i1.ɵeld(59, 0, null, null, 0, "section", [], null, null, null, null, null)), (_l()(), i1.ɵeld(60, 0, null, null, 4, "section", [["class", "padding-top60 container"], ["id", "1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(61, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(62, 0, null, null, 2, "div", [["class", "col-md-9"]], null, null, null, null, null)), (_l()(), i1.ɵeld(63, 0, null, null, 1, "app-batches", [], null, null, null, i4.View_BatchesComponent_0, i4.RenderType_BatchesComponent)), i1.ɵdid(64, 638976, null, 0, i5.BatchesComponent, [i6.CoursesService], { inputData: [0, "inputData"], page: [1, "page"] }, null), (_l()(), i1.ɵeld(65, 0, null, null, 24, "section", [["class", "padding-top60"], ["id", "2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(66, 0, null, null, 23, "div", [["class", "container-fluid"]], null, null, null, null, null)), (_l()(), i1.ɵeld(67, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(68, 0, null, null, 2, "div", [["class", "col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center project-heading padding10"], ["style", "background-color:#f5a623"]], null, null, null, null, null)), (_l()(), i1.ɵeld(69, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Course Curriculum"])), (_l()(), i1.ɵeld(71, 0, null, null, 18, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(72, 0, null, null, 7, "div", [["class", "row why-learn-course"]], null, null, null, null, null)), (_l()(), i1.ɵeld(73, 0, null, null, 6, "div", [["class", "col-md-12 section-padding"], ["style", "padding-bottom: 0px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(74, 0, null, null, 5, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(75, 0, null, null, 4, "div", [["class", "col-md-12 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(76, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(77, null, ["Why Learn ", ""])), (_l()(), i1.ɵeld(78, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(79, null, ["", ""])), (_l()(), i1.ɵeld(80, 0, null, null, 9, "div", [["class", "row tools-covered"]], null, null, null, null, null)), (_l()(), i1.ɵeld(81, 0, null, null, 8, "div", [["class", "col-md-12 section-padding"], ["style", "padding-top: 0px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(82, 0, null, null, 4, "div", [["class", "row padding10 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(83, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Topics Covered"])), (_l()(), i1.ɵeld(85, 0, null, null, 1, "card-a", [], null, null, null, i7.View_CardAComponent_0, i7.RenderType_CardAComponent)), i1.ɵdid(86, 573440, null, 0, i8.CardAComponent, [], { inputData: [0, "inputData"] }, null), (_l()(), i1.ɵeld(87, 0, null, null, 2, "div", [["class", "col-md-12 text-center padding15"]], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 1, "app-modalpopup", [], null, null, null, i9.View_ModalpopupComponent_0, i9.RenderType_ModalpopupComponent)), i1.ɵdid(89, 638976, null, 0, i10.ModalpopupComponent, [i11.FormBuilder, i6.CoursesService], { page: [0, "page"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SalesforceComponent_1)), i1.ɵdid(91, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(92, 0, null, null, 74, "section", [["class", "padding-top60"], ["id", "4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(93, 0, null, null, 4, "div", [["class", "container-fluid"]], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(95, 0, null, null, 2, "div", [["class", "col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center project-heading padding10"], ["style", "background-color:#dd4144"]], null, null, null, null, null)), (_l()(), i1.ɵeld(96, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(97, null, ["Career with ", ""])), (_l()(), i1.ɵeld(98, 0, null, null, 68, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 16, "div", [["class", "row section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(100, 0, null, null, 15, "div", [["class", "col-md-12  block"]], null, null, null, null, null)), (_l()(), i1.ɵeld(101, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(102, 0, null, null, 2, "div", [["class", "col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center career-heading padding10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(103, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Career Prospects"])), (_l()(), i1.ɵeld(105, 0, null, null, 10, "div", [["class", "row Aligner"], ["style", "padding: 30px"]], null, null, null, null, null)), (_l()(), i1.ɵeld(106, 0, null, null, 1, "div", [["class", "col-md-6 hidden-sm hidden-xs"]], null, null, null, null, null)), (_l()(), i1.ɵeld(107, 0, null, null, 0, "img", [["class", "img-responsive wow slideInLeft"], ["src", "../../../assets/images/courses/devopscourse/career.svg"], ["style", "width: 100%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(108, 0, null, null, 7, "div", [["class", "col-md-6 Aligner-item"]], null, null, null, null, null)), (_l()(), i1.ɵeld(109, 0, null, null, 1, "p", [["style", "font-weight:600"]], null, null, null, null, null)), (_l()(), i1.ɵted(110, null, ["", ""])), (_l()(), i1.ɵeld(111, 0, null, null, 1, "p", [["style", "font-weight:600"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Upon successful completion of the course, candidates can choose their career as:"])), (_l()(), i1.ɵeld(113, 0, null, null, 2, "ul", [["class", "career-prospects"], ["style", "list-style: disc outside none;margin-left: 20px"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SalesforceComponent_5)), i1.ɵdid(115, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(116, 0, null, null, 50, "div", [["class", "row section-padding padding-top60"], ["id", "5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(117, 0, null, null, 49, "div", [["class", "col-md-12 block section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(118, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(119, 0, null, null, 2, "div", [["class", "col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center whydl-heading"]], null, null, null, null, null)), (_l()(), i1.ɵeld(120, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Why Digital Lync"])), (_l()(), i1.ɵeld(122, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(123, 0, null, null, 2, "div", [["class", "col-md-12 section-padding text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(124, 0, null, null, 1, "p", [["class", "font-size-16"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["To empower technology seekers by providing world class infrastructure, best quality of technology education, invent great products and support enthusiastic new entrepreneurs."])), (_l()(), i1.ɵeld(126, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(127, 0, null, null, 2, "div", [["class", "col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center success-heading"]], null, null, null, null, null)), (_l()(), i1.ɵeld(128, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Our Success"])), (_l()(), i1.ɵeld(130, 0, null, null, 36, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(131, 0, null, null, 11, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(132, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(133, 0, null, null, 2, "div", [["class", "col-md-12 text-center sec-pad10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(134, 0, null, null, 1, "p", [["class", "font-size-16"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["We Understand & We Guide"])), (_l()(), i1.ɵeld(136, 0, null, null, 2, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(137, 0, null, null, 1, "div", [["class", "col-md-12 text-center sec-pad10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(138, 0, null, null, 0, "img", [["src", "../../../assets/images/courses/devopscourse/career-guidance.svg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(139, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(140, 0, null, null, 2, "div", [["class", "col-md-12 text-center sec-pad10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(141, 0, null, null, 1, "p", [["class", "font-size-16"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Career Guidance"])), (_l()(), i1.ɵeld(143, 0, null, null, 11, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(144, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(145, 0, null, null, 2, "div", [["class", "col-md-12 text-center sec-pad10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(146, 0, null, null, 1, "p", [["class", "font-size-16"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["You Choose & You Excel"])), (_l()(), i1.ɵeld(148, 0, null, null, 2, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(149, 0, null, null, 1, "div", [["class", "col-md-12 text-center sec-pad10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(150, 0, null, null, 0, "img", [["src", "../../../assets/images/courses/devopscourse/course-choice.svg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(151, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(152, 0, null, null, 2, "div", [["class", "col-md-12 text-center sec-pad10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(153, 0, null, null, 1, "p", [["class", "font-size-16"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Course Choice"])), (_l()(), i1.ɵeld(155, 0, null, null, 11, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(156, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(157, 0, null, null, 2, "div", [["class", "col-md-12 text-center sec-pad10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(158, 0, null, null, 1, "p", [["class", "font-size-16"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["We Assist & You Succeed"])), (_l()(), i1.ɵeld(160, 0, null, null, 2, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(161, 0, null, null, 1, "div", [["class", "col-md-12 text-center sec-pad10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(162, 0, null, null, 0, "img", [["src", "../../../assets/images/courses/devopscourse/placement-assistance.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(163, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(164, 0, null, null, 2, "div", [["class", "col-md-12 text-center sec-pad10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(165, 0, null, null, 1, "p", [["class", "font-size-16"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Placement Assistance"])), (_l()(), i1.ɵeld(167, 0, null, null, 7, "section", [["class", "padding-top60"], ["id", "6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(168, 0, null, null, 4, "div", [["class", "container-fluid"], ["style", "background-color: #0ecbb5;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(169, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(170, 0, null, null, 2, "div", [["class", "col-md-12 text-center reviews-heading padding15"]], null, null, null, null, null)), (_l()(), i1.ɵeld(171, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Our Reviews"])), (_l()(), i1.ɵeld(173, 0, null, null, 1, "app-reviews", [], null, null, null, i12.View_ReviewsComponent_0, i12.RenderType_ReviewsComponent)), i1.ɵdid(174, 114688, null, 0, i13.ReviewsComponent, [], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_2 = "/"; _ck(_v, 7, 0, currVal_2); var currVal_5 = "/courses"; _ck(_v, 11, 0, currVal_5); var currVal_10 = _co.courseName; var currVal_11 = _co.page; _ck(_v, 64, 0, currVal_10, currVal_11); var currVal_14 = _co.courseData.subModules; _ck(_v, 86, 0, currVal_14); var currVal_15 = _co.page; _ck(_v, 89, 0, currVal_15); var currVal_16 = (_co.courseData.projects.length > 0); _ck(_v, 91, 0, currVal_16); var currVal_19 = _co.courseData.careers; _ck(_v, 115, 0, currVal_19); _ck(_v, 174, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵnov(_v, 7).target; var currVal_1 = i1.ɵnov(_v, 7).href; _ck(_v, 6, 0, currVal_0, currVal_1); var currVal_3 = i1.ɵnov(_v, 11).target; var currVal_4 = i1.ɵnov(_v, 11).href; _ck(_v, 10, 0, currVal_3, currVal_4); var currVal_6 = _co.courseData.slug; _ck(_v, 16, 0, currVal_6); var currVal_7 = _co.courseData.duration; _ck(_v, 32, 0, currVal_7); var currVal_8 = _co.courseData.hours; _ck(_v, 34, 0, currVal_8); var currVal_9 = _co.courseData.pre; _ck(_v, 46, 0, currVal_9); var currVal_12 = _co.courseData.name; _ck(_v, 77, 0, currVal_12); var currVal_13 = _co.courseData.why; _ck(_v, 79, 0, currVal_13); var currVal_17 = _co.courseData.name; _ck(_v, 97, 0, currVal_17); var currVal_18 = _co.courseData.careerHead; _ck(_v, 110, 0, currVal_18); }); }
+exports.View_SalesforceComponent_0 = View_SalesforceComponent_0;
+function View_SalesforceComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-salesforce", [], null, null, null, View_SalesforceComponent_0, RenderType_SalesforceComponent)), i1.ɵdid(1, 114688, null, 0, i14.SalesforceComponent, [i15.Title, i15.Meta, i3.Router, i3.ActivatedRoute, i11.FormBuilder, i15.DOCUMENT, i6.CoursesService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_SalesforceComponent_Host_0 = View_SalesforceComponent_Host_0;
+var SalesforceComponentNgFactory = i1.ɵccf("app-salesforce", i14.SalesforceComponent, View_SalesforceComponent_Host_0, {}, {}, []);
+exports.SalesforceComponentNgFactory = SalesforceComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/components/courses/salesforce/salesforce.component.scss.shim.ngstyle.js":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/components/courses/salesforce/salesforce.component.scss.shim.ngstyle.js ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = ["h2[_ngcontent-%COMP%] {\n  color: white; }\n\n#breadcrumb[_ngcontent-%COMP%] {\n  padding-top: 30px; }\n\n.padding-top60[_ngcontent-%COMP%] {\n  padding-top: 55px; }\n\n.bannerImage[_ngcontent-%COMP%]:hover {\n  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.37); }\n\n.bannerImage[_ngcontent-%COMP%] {\n  background-image: url('salesforce-course-cover.png');\n  transition: all .3s ease;\n  background-position: center center;\n  padding-top: 35%;\n  margin: auto;\n  width: 70%;\n  background-size: cover;\n  border-radius: .375rem; }\n\n#breadcrumb[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  text-decoration: none;\n  font-size: 16px;\n  font-weight: 300;\n  font-style: normal;\n  font-stretch: normal;\n  line-height: normal;\n  letter-spacing: normal;\n  text-align: left;\n  color: #000000;\n  box-shadow: 0 2px 4px 0 rgba(191, 191, 191, 0.5);\n  padding: 6px 16px !important;\n  border-radius: 4px;\n  margin: 10px; }\n\n#breadcrumb[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  text-decoration: none;\n  font-size: 16px;\n  font-weight: 300;\n  font-style: normal;\n  font-stretch: normal;\n  line-height: normal;\n  letter-spacing: normal;\n  text-align: left;\n  color: #f64a35;\n  padding: 0px 16px; }\n\n#breadcrumb[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:nth-child(1) {\n  color: #d0021b;\n  font-weight: bold; }\n\n#breadcrumb[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:nth-child(3) {\n  color: #2183c5;\n  font-weight: bold; }\n\n#breadcrumb[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:nth-child(5) {\n  color: #00ae62;\n  font-weight: bold; }\n\n.list-group[_ngcontent-%COMP%] {\n  margin-bottom: 0px !important;\n  padding: 16px 0px; }\n\n.list-group[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  list-style-type: none;\n  border-left: 1px solid;\n  display: inline-block;\n  padding: 0px 0px !important;\n  font-size: 0px; }\n\n.list-group[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  text-decoration: none;\n  font-size: 14px;\n  padding: 0px 35px;\n  font-weight: bold; }\n\nul[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: red; }\n\n.box-shadow[_ngcontent-%COMP%] {\n  box-shadow: 0 2px 4px 0 rgba(160, 160, 160, 0.5); }\n\n.project-heading[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: white; }\n\n.section-padding[_ngcontent-%COMP%] {\n  padding: 40px; }\n\n.sec-pad10[_ngcontent-%COMP%] {\n  padding: 10px; }\n\n.card--image-wrapper[_ngcontent-%COMP%] {\n  padding: 0;\n  border-bottom-left-radius: .375rem;\n  border-top-left-radius: .375rem;\n  float: left;\n  display: block;\n  margin-right: 1.69491525%;\n  width: 40.6779661%;\n  height: 100%;\n  overflow: hidden;\n  margin-right: 0; }\n\n\n\n.career-heading[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #39b54a; }\n\n.block[_ngcontent-%COMP%] {\n  margin-bottom: 10px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }\n\n.career-prospects[_ngcontent-%COMP%] {\n  list-style-type: none;\n  text-decoration: none;\n  text-align: left; }\n\n\n\n.whydl-heading[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #dd4144; }\n\n.success-heading[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: #06b066; }\n\n.fixed-header[_ngcontent-%COMP%] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  z-index: 99;\n  display: block;\n  background-color: #fff; }\n\n.fixed-footer[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  z-index: 9999;\n  transition: all 1s ease;\n  display: block;\n  width: 100%; }\n\n.sticky-footer[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin: 0px;\n  font-size: 14px; }\n\n.sticky-footer[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: white;\n    text-decoration: none; }\n\n.course-rating[_ngcontent-%COMP%] {\n  width: 30px; }\n\n.coursebanner[_ngcontent-%COMP%] {\n  margin-top: 0px;\n  display: -ms-flexbox;\n  display: flex;\n  height: 61vh;\n  background-size: cover;\n  width: 100%; }\n\n.coursebanner[_ngcontent-%COMP%]   .heading[_ngcontent-%COMP%] {\n  font-size: 43px;\n  font-weight: 300;\n  font-style: normal;\n  font-stretch: normal;\n  letter-spacing: 2px;\n  text-align: center;\n  color: white; }\n\n.course_poster_banner[_ngcontent-%COMP%] {\n  background-image: linear-gradient(116deg, #6db7c1, #07cab2);\n  padding: 52px; }\n\n.bannerImage[_ngcontent-%COMP%]:hover {\n  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.37); }\n\n@media only screen and (min-width: 320px) and (max-width: 500px) {\n  .course_poster_banner[_ngcontent-%COMP%] {\n    padding: 20px; }\n  .slugName[_ngcontent-%COMP%] {\n    display: block !important; } }\n\n@media only screen and (min-width: 768px) and (max-width: 1024px) {\n  .sticky-scroll[_ngcontent-%COMP%]    > ul[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    font-size: 9px !important; } }\n\n.coursebanner[_ngcontent-%COMP%]   .caption[_ngcontent-%COMP%] {\n  font-size: 18px;\n  font-weight: normal;\n  font-style: normal;\n  font-stretch: normal;\n  text-align: left;\n  color: #939393;\n  margin-left: 60px;\n  margin-bottom: 80px; }\n\n#my-row[_ngcontent-%COMP%] {\n  display: table; }\n\n#my-row[_ngcontent-%COMP%]   .panel[_ngcontent-%COMP%] {\n  float: none;\n  display: table-cell;\n  vertical-align: top; }\n\n.sticky-container[_ngcontent-%COMP%]   .scroll-content[_ngcontent-%COMP%] {\n  border: 1px solid #333;\n  background-size: 50px 50px;\n  height: 100vh !important; }\n\n.sticky-float-right[_ngcontent-%COMP%] {\n  background-color: rgba(0, 255, 0, 0.2); }\n\ndiv[ngui-sticky][_ngcontent-%COMP%] {\n  text-align: center;\n  color: #fff;\n  padding: 10px; }\n\n.enroll-now-form[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  font-weight: bold;\n  letter-spacing: 0.6px;\n  text-align: center;\n  color: #57b5ac; }\n\n.enroll-now-form[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  width: 120px;\n  height: 40px;\n  border-radius: 3px;\n  background-color: #57b5ac;\n  color: white; }\n\n.card-content[_ngcontent-%COMP%] {\n  color: white;\n  margin: auto; }\n\n.card-content[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    margin: auto; }\n\n.form-group[_ngcontent-%COMP%] {\n  height: 80px; }\n\n.form-group[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  color: red !important;\n  font-size: 12px;\n  padding-left: 3px; }\n\n.form-group[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]:after {\n  color: red !important;\n  font-size: 12px;\n  content: '*';\n  display: inline; }\n\n.why-learn-course[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #f5a623;\n  font-weight: bold; }\n\n.why-learn-course[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  font-size: 16px;\n  font-weight: normal;\n  font-style: normal;\n  font-stretch: normal;\n  line-height: normal;\n  letter-spacing: 0.1px;\n  color: #0071bc; }\n\n.why-learn-course[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 200px;\n  height: 200px;\n  margin: auto; }\n\n.download-curriculum[_ngcontent-%COMP%] {\n  background-color: #57b5ac;\n  width: 290px;\n  height: 40px;\n  border-radius: 5px;\n  color: #ffffff;\n  font-size: 16px; }\n\n.projects[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 300px;\n  height: 300px;\n  margin: auto; }\n\n.projects[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #78808a;\n  font-size: 14px; }\n\n.showForm[_ngcontent-%COMP%] {\n  display: none; }\n\n.showHide[_ngcontent-%COMP%] {\n  display: none !important; }\n\n.flip-container[_ngcontent-%COMP%], .flip-container1[_ngcontent-%COMP%] {\n  -webkit-perspective: 1000;\n  -o-perspective: 1000;\n  perspective: 1000; }\n\n.flip-container[_ngcontent-%COMP%]:hover   .flipper[_ngcontent-%COMP%], .flip-container.hover[_ngcontent-%COMP%]   .flipper[_ngcontent-%COMP%], .flip-container1[_ngcontent-%COMP%]:hover   .flipper[_ngcontent-%COMP%], .flip-container1.hover[_ngcontent-%COMP%]   .flipper[_ngcontent-%COMP%] {\n  -webkit-transform: rotateY(180deg);\n  transform: rotateY(180deg); }\n\n.flip-container[_ngcontent-%COMP%], .course-front[_ngcontent-%COMP%], .course-back[_ngcontent-%COMP%] {\n  width: 286px;\n  height: 275px;\n  border: 0px solid #f8f8f8; }\n\n.flip-container1[_ngcontent-%COMP%], .module-front[_ngcontent-%COMP%] {\n  width: 373px !important;\n  height: 150px;\n  border: 0px solid #f8f8f8;\n  margin-bottom: 20px; }\n\n.module-back[_ngcontent-%COMP%] {\n  width: 350px;\n  height: 150px;\n  border-radius: 8px; }\n\n.flipper[_ngcontent-%COMP%] {\n  -webkit-transition: 0.6s;\n  -webkit-transform-style: preserve-3d;\n  -moz-transition: 0.6s;\n  -moz-transform-style: preserve-3d;\n  -o-transition: 0.6s;\n  -o-transform-style: preserve-3d;\n  transition: 0.6s;\n  transform-style: preserve-3d;\n  position: relative; }\n\n.course-front[_ngcontent-%COMP%], .course-back[_ngcontent-%COMP%], .module-front[_ngcontent-%COMP%], .module-back[_ngcontent-%COMP%] {\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.course-front[_ngcontent-%COMP%], .module-front[_ngcontent-%COMP%] {\n  z-index: 2; }\n\n.course-back[_ngcontent-%COMP%], .module-back[_ngcontent-%COMP%] {\n  -webkit-transform: rotateY(180deg);\n  transform: rotateY(180deg);\n  background: #f8f8f8; }\n\n.course-back[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: 20px;\n  left: 0;\n  right: 0;\n  text-align: center;\n  font-family: arial;\n  line-height: 2em; }\n\n.module-back[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: 5px;\n  left: 0;\n  right: 0;\n  text-align: center;\n  font-family: arial;\n  line-height: 2em; }\n\nnav[_ngcontent-%COMP%] {\n  border-right: none;\n  width: 100%; }\n\nnav[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  margin: 0;\n  padding: 0; }\n\nnav[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  list-style: none;\n  text-align: center;\n  border-left: 2px solid #fff;\n  border-right: 2px solid #ccc;\n  padding: 0px 30px 0px 30px; }\n\nnav[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:first-child {\n  border-left: none; }\n\nnav[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  display: block;\n  text-decoration: none;\n  color: #616161;\n  padding: 10px 0; }\n\n.table[_ngcontent-%COMP%] {\n  display: table;\n  table-layout: fixed;\n  display: block; }\n\n.table[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  display: table-row; }\n\n.table[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  display: table-cell;\n  cursor: pointer; }\n\n@media only screen and (max-width: 600px) {\n  .box-shadow[_ngcontent-%COMP%] {\n    display: none; } }\n\n@media only screen and (max-width: 414px) {\n  .box-shadow[_ngcontent-%COMP%] {\n    display: none; } }\n\n.tabel[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:last-child {\n  border-right: none; }\n\n@media only screen and (max-width: 768px) {\n  .box-shadow[_ngcontent-%COMP%] {\n    display: none; } }\n\n.card-wrapper[_ngcontent-%COMP%] {\n  width: 100%;\n  display: -ms-grid;\n  display: grid;\n  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];\n      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); }\n\n.card-el[_ngcontent-%COMP%] {\n  text-align: center;\n  height: 190px;\n  margin: 8px; }\n\n.img-box[_ngcontent-%COMP%] {\n  width: 100%;\n  height: auto;\n  overflow: unset;\n  background: transparent;\n  position: -webkit-sticky;\n  position: sticky; }\n\n.carda[_ngcontent-%COMP%] {\n  left: 50px;\n  position: absolute;\n  height: 180px;\n  border-radius: 10px;\n  background-color: #ffffff;\n  box-shadow: 0 2px 10px 0 rgba(194, 194, 194, 0.5);\n  padding: 0px 10px 0px 60px;\n  text-align: left;\n  min-width: 300px; }\n\n.oval[_ngcontent-%COMP%] {\n  width: 100px;\n  height: 100px;\n  border-radius: 100px;\n  background-color: #ffffff;\n  box-shadow: 0 2px 10px 0 rgba(194, 194, 194, 0.5);\n  position: absolute;\n  z-index: 1;\n  top: 25px; }\n\n@media only screen and (min-width: 320px) and (max-width: 500px) {\n  .oval[_ngcontent-%COMP%] {\n    display: none; }\n  .carda[_ngcontent-%COMP%] {\n    left: 0px;\n    width: 280px; } }"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/components/courses/salesforce/salesforce.component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/components/courses/salesforce/salesforce.component.ts ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var props_1 = __webpack_require__(/*! ../../../apex/common/props */ "./src/app/apex/common/props.ts");
+var platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var page_entity_1 = __webpack_require__(/*! ../../../apex/entities/page.entity */ "./src/app/apex/entities/page.entity.ts");
+var courses_form_1 = __webpack_require__(/*! ../courses.form */ "./src/app/components/courses/courses.form.ts");
+var forms_1 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
+var courses_service_1 = __webpack_require__(/*! ../courses.service */ "./src/app/components/courses/courses.service.ts");
+var contact_entity_1 = __webpack_require__(/*! ../../../apex/entities/contact.entity */ "./src/app/apex/entities/contact.entity.ts");
+// import { WINDOW } from "../window.service";
+var SalesforceComponent = /** @class */ (function () {
+    function SalesforceComponent(title, meta, routes, activatedRoute, formBuilder, document, coursesService) {
+        this.title = title;
+        this.meta = meta;
+        this.routes = routes;
+        this.activatedRoute = activatedRoute;
+        this.formBuilder = formBuilder;
+        this.document = document;
+        this.coursesService = coursesService;
+        this.page = new page_entity_1.Page();
+        this.myForm = courses_form_1.ContactForm.init();
+        this.isShowModal = true;
+        this.showForm = false;
+        this.emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
+        this.mobilePattern = '^[6-9][0-9]{9}$';
+        this.namePattern = '[a-zA-Z ]+$';
+        this.courseName = 'Iot ';
+        this.buttonText = "Enroll Now";
+        this.profile = new contact_entity_1.Contact();
+        this.imageHost = props_1.Props.IMAGE_HOST;
+        this.bannerData = [
+            {}
+        ];
+        this.courseData = {
+            name: "Salesforce",
+            description: "Salesforce Course",
+            courseType: "Both",
+            duration: "60 Hours",
+            hours: 5,
+            why: "Salesforce can customise the complete CRM for any business. It’s the best way to boost adoption and make sure CRM apps are working the way one wants it to.",
+            whyImage: "why-learn--digital-lync.png",
+            whyImageAlt: "why learn Iot ",
+            careerHead: "",
+            courseImage: "Salesforce-course.png",
+            courseImageAlt: "Iot ",
+            views: 5750,
+            share: 123,
+            slug: "Salesforce-course-training-hyderabad",
+            position: 1,
+            curriculum: "",
+            careers: [
+                "SalesForce Analyst",
+                "SalesForce Consultant ",
+                "SalesForce Architect",
+                "SalesForce Admin"
+            ],
+            pre: [
+                "No prerequisites are required to learn Salesforce"
+            ],
+            subModules: [
+                {
+                    name: "About SalesForce",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Production and sandbox environments",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Creating a new application",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Security in Salesforce",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Import Wizard and Data Loader",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Workflow rules",
+                    description: "IoT Architecture standard,Basics of Networking",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Approval process",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Lightning Process Builder",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Reports and dashboards",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Web to lead and web to case",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                },
+                {
+                    name: "Rules on leads and cases",
+                    description: "",
+                    image: "assets/images/courses/iotcourse/modules.svg",
+                    imageAlt: ""
+                }
+            ],
+            projects: [
+                {
+                    name: "Building internal application in SalesForce",
+                    description: "",
+                    image: "assets/images/courses/salesforce/project1.png",
+                    imageAlt: "salesforcecourse",
+                },
+                {
+                    name: "Customization in SalesForce",
+                    description: "",
+                    image: "assets/images/courses/salesforce/project2.png",
+                    imageAlt: "salesforcecourse",
+                }
+            ]
+        };
+        this.meta.updateTag({ name: 'Description', content: "India's No.1 Salesforce Training Institute in Hyderabad with Placement Assistance. Upgrade Your Career by taking Salesforce Certification Course @ Digtial Lync!" });
+        this.meta.updateTag({ name: 'Title', content: 'Salesforce Training in Hyderabad | Salesforce Certification Course' });
+        this.meta.updateTag({ name: 'Keywords', content: 'Salesforce training in hyderabad, Salesforce in hyderabad, Salesforce course in hyderabad, Salesforce certification in Hyderabad, Salesforce institute in Hyderabad, digital lync' });
+        title.setTitle('Salesforce Training in Hyderabad | Salesforce Certification Course');
+        this.isShowModal = true;
+        courses_form_1.ContactForm.edit(this.myForm);
+        this.UserDetailsForm = this.formBuilder.group({
+            'name': ['', forms_1.Validators.compose([forms_1.Validators.required, forms_1.Validators.pattern(this.namePattern)])],
+            'email': ['', [forms_1.Validators.required, forms_1.Validators.pattern(this.emailPattern)]],
+            'mobile': ['', forms_1.Validators.compose([forms_1.Validators.required, forms_1.Validators.minLength(5), forms_1.Validators.pattern(this.mobilePattern)])]
+        });
+        this.page.slug = "salesforce-course-training-hyderabad";
+        this.page.name = "Salesforce";
+    }
+    SalesforceComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.profile.sourceOfPage = "Salesforce-course-training-hyderabad";
+        this.page.slug = "Salesforce-course-training-hyderabad";
+        this.coursesService.saveForm(this.profile).subscribe(function (data) {
+            console.log(data);
+            if (data.status == '1') {
+                setTimeout(function () {
+                }, 2000);
+                _this.coursesService.navigateToThanksPage();
+            }
+        });
+    };
+    SalesforceComponent.prototype.listClick = function (event, newValue) {
+        console.log(newValue);
+        this.selectedItem = newValue;
+    };
+    // @HostListener('window:scroll', ['$event'])
+    // onWindowScroll($event) {
+    //   let number = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
+    //   if (number > 912) {
+    //     this.isScrolled = true;  
+    //   } 
+    //   else {
+    //     this.isScrolled = false;
+    //   }
+    //   if (number > 1168 && number < 4900) {
+    //     this.stickyFooter = true
+    //   } else {
+    //     this.stickyFooter = false
+    //   }
+    //   if(number > 1036){
+    //     this.enrollBtn = true;
+    //   }else{
+    //     this.enrollBtn = false;
+    //   }
+    // }
+    SalesforceComponent.prototype.ngOnInit = function () {
+        //   this.routes.events
+        // .filter((event) => event instanceof NavigationEnd)
+        // .map(() => this.activatedRoute)
+        // .map((route) => {
+        //   while (route.firstChild) route = route.firstChild;
+        //   return route;
+        // })
+        // .filter((route) => route.outlet === 'primary')
+        // .mergeMap((route) => route.data)
+        // .subscribe((event) => {
+        //   this._seoService.updateTitle(event['title']);
+        //   //Updating Description tag dynamically with title
+        //   this._seoService.updateDescription(event['title'] + event['description'])
+        // });
+    };
+    return SalesforceComponent;
+}());
+exports.SalesforceComponent = SalesforceComponent;
+
+
+/***/ }),
+
 /***/ "./src/app/components/courses/servicenow-system-admin/servicenow-system-admin.component.ngfactory.js":
 /*!***********************************************************************************************************!*\
   !*** ./src/app/components/courses/servicenow-system-admin/servicenow-system-admin.component.ngfactory.js ***!
@@ -6241,7 +6589,7 @@ var ServiceNowSystemAdminComponent = /** @class */ (function () {
         this.emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
         this.mobilePattern = '^[6-9][0-9]{9}$';
         this.namePattern = '[a-zA-Z ]+$';
-        this.courseName = 'ServiceNow System Admin';
+        this.courseName = 'ServiceNow';
         this.buttonText = "Enroll Now";
         this.profile = new contact_entity_1.Contact();
         this.imageHost = props_1.Props.IMAGE_HOST;
@@ -6249,20 +6597,20 @@ var ServiceNowSystemAdminComponent = /** @class */ (function () {
             {}
         ];
         this.courseData = {
-            name: "ServiceNow System Admin",
-            description: "ServiceNow System Admin Course",
+            name: "ServiceNow",
+            description: "ServiceNow Course",
             courseType: "Both",
             duration: "45 Hours",
             hours: 5,
-            why: "ServiceNow System Admin course helps one to manage the configuration, implementation, and maintenance of the ServiceNow platform. ServiceNow which is widely used in IT and business management helps organizations to fasten up their operations.",
+            why: "ServiceNow  course helps one to manage the configuration, implementation, and maintenance of the ServiceNow platform. ServiceNow which is widely used in IT and business management helps organizations to fasten up their operations.",
             whyImage: "why-learn-Digital Marketing-digital-lync.png",
             whyImageAlt: "why learn Digital Marketing",
             careerHead: "",
             courseImage: "assets/images/courses/servicenow/servicenow.png",
-            courseImageAlt: "ServiceNow System Admin",
+            courseImageAlt: "ServiceNow",
             views: 5750,
             share: 123,
-            slug: "servicenow-system-admin-course-training-hyderabad",
+            slug: "serviceNow-course-training-hyderabad",
             position: 1,
             curriculum: "",
             careers: [
@@ -6344,10 +6692,10 @@ var ServiceNowSystemAdminComponent = /** @class */ (function () {
                 }
             ]
         };
-        this.meta.updateTag({ name: 'Description', content: "India's No.1 ServiceNow System Admin Training Institute in Hyderabad with Placement Assistance. Upgrade Your Career by taking ServiceNow System Admin Certification Course Now!" });
-        this.meta.updateTag({ name: 'Title', content: 'ServiceNow System Admin Certification Course Training in Hyderabad | Digital Lync' });
-        this.meta.updateTag({ name: 'Keywords', content: 'ServiceNow System Admintraining in hyderabad, ServiceNow System Admin course in Hyderabad, ServiceNow System Admin in Hyderabad, ServiceNow System Admin training institute in Hyderabad, digital lync' });
-        title.setTitle('ServiceNow System Admin Certification Course Training in Hyderabad | Digital Lync');
+        this.meta.updateTag({ name: 'Description', content: "India's No.1 ServiceNow Training Institute in Hyderabad with Placement Assistance. Upgrade Your Career by taking ServiceNow Certification Course Now!" });
+        this.meta.updateTag({ name: 'Title', content: 'ServiceNow Certification Course Training in Hyderabad | Digital Lync' });
+        this.meta.updateTag({ name: 'Keywords', content: 'ServiceNow training in hyderabad, ServiceNow course in Hyderabad, ServiceNow in Hyderabad, ServiceNow training institute in Hyderabad, digital lync' });
+        title.setTitle('ServiceNow Certification Course Training in Hyderabad | Digital Lync');
         this.isShowModal = true;
         courses_form_1.ContactForm.edit(this.myForm);
         this.UserDetailsForm = this.formBuilder.group({
@@ -6355,13 +6703,13 @@ var ServiceNowSystemAdminComponent = /** @class */ (function () {
             'email': ['', [forms_1.Validators.required, forms_1.Validators.pattern(this.emailPattern)]],
             'mobile': ['', forms_1.Validators.compose([forms_1.Validators.required, forms_1.Validators.minLength(5), forms_1.Validators.pattern(this.mobilePattern)])]
         });
-        this.page.slug = "servicenow-system-admin-course-training-hyderabad";
-        this.page.name = "ServiceNow System Admin";
+        this.page.slug = "servicenow-course-training-hyderabad";
+        this.page.name = "ServiceNow";
     }
     ServiceNowSystemAdminComponent.prototype.onSubmit = function () {
         var _this = this;
-        this.profile.sourceOfPage = "servicenow-system-admin-course-training-hyderabad";
-        this.page.slug = "servicenow-system-admin-course-training-hyderabad";
+        this.profile.sourceOfPage = "servicenow-course-training-hyderabad";
+        this.page.slug = "servicenow-course-training-hyderabad";
         this.coursesService.saveForm(this.profile).subscribe(function (data) {
             console.log(data);
             if (data.status == '1') {
@@ -7687,21 +8035,21 @@ var i5 = __webpack_require__(/*! ./header.service */ "./src/app/components/heade
 var styles_HeaderComponent = [i0.styles];
 var RenderType_HeaderComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_HeaderComponent, data: {} });
 exports.RenderType_HeaderComponent = RenderType_HeaderComponent;
-function View_HeaderComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 4, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "a", [["class", "captilize-text"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+function View_HeaderComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "col-md-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 4, "ul", [["class", "course-nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "a", [["class", "captilize-text"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 4).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
     } if (("click" === en)) {
         var pd_1 = (_co.navigateToCourse(_v.context.$implicit.route) !== false);
         ad = (pd_1 && ad);
     } return ad; }, null, null)), i1.ɵdid(4, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(5, null, ["", ""]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "course/", _v.context.$implicit.route, ""); _ck(_v, 4, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 4).target; var currVal_1 = i1.ɵnov(_v, 4).href; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.name; _ck(_v, 5, 0, currVal_3); }); }
-function View_HeaderComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "a", [["class", "captilize-text"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 2).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+function View_HeaderComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "ul", [["class", "course-nav_sub"], ["style", "display: inline-block;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 3, "a", [["class", "captilize-text"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 4).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
     } if (("click" === en)) {
-        var pd_1 = (_co.navigateToProgram(_v.context.$implicit.slug) !== false);
+        var pd_1 = (_co.navigateToMembership(_v.context.$implicit.route) !== false);
         ad = (pd_1 && ad);
-    } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(3, null, ["", ""]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "program/", _v.context.$implicit.slug, ""); _ck(_v, 2, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.name; _ck(_v, 3, 0, currVal_3); }); }
-function View_HeaderComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "a", [], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), i1.ɵdid(4, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(5, 0, null, null, 0, "span", [["class", "glyphicon glyphicon-star star-size"], ["style", "margin-right:3px"]], [[4, "color", null]], null, null, null, null)), (_l()(), i1.ɵted(6, null, [" ", ""]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "membership/", _v.context.$implicit.route, ""); _ck(_v, 4, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 4).target; var currVal_1 = i1.ɵnov(_v, 4).href; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.color; _ck(_v, 5, 0, currVal_3); var currVal_4 = _v.context.$implicit.name; _ck(_v, 6, 0, currVal_4); }); }
+function View_HeaderComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "a", [["class", "captilize-text"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 2).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
     } if (("click" === en)) {
@@ -7729,40 +8077,47 @@ function View_HeaderComponent_6(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0
         var pd_1 = (_co.navigateToProgram(_v.context.$implicit.slug) !== false);
         ad = (pd_1 && ad);
     } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(3, null, ["", ""]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "program/", _v.context.$implicit.slug, ""); _ck(_v, 2, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.name; _ck(_v, 3, 0, currVal_3); }); }
-function View_HeaderComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 115, "nav", [["class", "navbar navbar-default"], ["id", "navbar"], ["role", "navigation"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 114, "div", [["class", "container-fluid"], ["id", "navfluid"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 9, "div", [["class", "navbar-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 5, "button", [["aria-expanded", "false"], ["class", "navbar-toggle collapsed"], ["data-target", "#navigationbar"], ["data-toggle", "collapse"], ["type", "button"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "span", [["class", "sr-only"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Toggle navigation"])), (_l()(), i1.ɵeld(6, 0, null, null, 0, "span", [["class", "icon-bar"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 0, "span", [["class", "icon-bar"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 0, "span", [["class", "icon-bar"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 2, "a", [["class", "navbar-brand logo"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 1, "img", [["alt", "Digital Marketing Training in Hyderabad"], ["height", "38px"], ["routerLink", "/"], ["src", "../../assets/images/digitallynclogo.svg"], ["width", "190px"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+function View_HeaderComponent_7(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "a", [], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 2).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+        ad = (pd_0 && ad);
+    } if (("click" === en)) {
+        var pd_1 = (_co.navigateToProgram(_v.context.$implicit.slug) !== false);
+        ad = (pd_1 && ad);
+    } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(3, null, ["", ""]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "program/", _v.context.$implicit.slug, ""); _ck(_v, 2, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.name; _ck(_v, 3, 0, currVal_3); }); }
+function View_HeaderComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 123, "nav", [["class", "navbar navbar-default"], ["id", "navbar"], ["role", "navigation"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 122, "div", [["class", "container-fluid"], ["id", "navfluid"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 9, "div", [["class", "navbar-header"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 5, "button", [["aria-expanded", "false"], ["class", "navbar-toggle collapsed"], ["data-target", "#navigationbar"], ["data-toggle", "collapse"], ["type", "button"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "span", [["class", "sr-only"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Toggle navigation"])), (_l()(), i1.ɵeld(6, 0, null, null, 0, "span", [["class", "icon-bar"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 0, "span", [["class", "icon-bar"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 0, "span", [["class", "icon-bar"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 2, "a", [["class", "navbar-brand logo"]], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 1, "img", [["alt", "Digital Marketing Training in Hyderabad"], ["height", "38px"], ["routerLink", "/"], ["src", "../../assets/images/digitallynclogo.svg"], ["width", "190px"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 11).onClick() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(11, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(12, 0, null, null, 103, "div", [["class", "collapse navbar-collapse pull-right"], ["id", "navigationbar"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 102, "ul", [["class", "nav navbar-nav navbar-right"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 15, "li", [["class", "list-item animated dropdown dropbtn"], ["style", "z-index: 10005;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 5, "a", [["routerLink", "/courses"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+    } return ad; }, null, null)), i1.ɵdid(11, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(12, 0, null, null, 111, "div", [["class", "collapse navbar-collapse pull-right"], ["id", "navigationbar"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 110, "ul", [["class", "nav navbar-nav navbar-right"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 23, "li", [["class", "list-item animated dropdown dropbtn"], ["style", "z-index: 10005;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 5, "a", [["routerLink", "/courses"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 16).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(16, 671744, [[2, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(17, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 1, { links: 1 }), i1.ɵqud(603979776, 2, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Courses"])), (_l()(), i1.ɵeld(21, 0, null, null, 8, "div", [["class", "dropdown-content hidden-xs hidden-sm"], ["style", "padding: 10px;margin-top:0px;"]], null, null, null, null, null)), i1.ɵdid(22, 278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(23, { "fadesh": 0 }), (_l()(), i1.ɵeld(24, 0, null, null, 3, "h3", [["class", "nav_title"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 0, "img", [["src", "../../assets/images/Courses.svg"], ["style", "margin:0 5px 0 0;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Courses"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_1)), i1.ɵdid(29, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(30, 0, null, null, 54, "li", [["class", "list-item animated dropdown dropbtn"], ["style", "z-index: 10005;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 5, "a", [["routerLink", "/programs"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 32).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), i1.ɵdid(16, 671744, [[2, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(17, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 1, { links: 1 }), i1.ɵqud(603979776, 2, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Courses"])), (_l()(), i1.ɵeld(21, 0, null, null, 16, "div", [["class", "course-dropdown-content hidden-xs hidden-sm"], ["style", "padding: 10px;margin-top:0px;"]], null, null, null, null, null)), i1.ɵdid(22, 278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(23, { "fadesh": 0 }), (_l()(), i1.ɵeld(24, 0, null, null, 6, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 3, "h3", [["class", "course-head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(27, 0, null, null, 0, "img", [["src", "../../assets/images/Courses.svg"], ["style", "margin:0 5px 0 0;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Courses"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_1)), i1.ɵdid(30, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(31, 0, null, null, 6, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 3, "h3", [["class", "course-head"]], null, null, null, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(34, 0, null, null, 0, "img", [["src", "../../assets/images/Courses.svg"], ["style", "margin:0 5px 0 0;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Membership Plan"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_2)), i1.ɵdid(37, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(38, 0, null, null, 54, "li", [["class", "list-item animated dropdown dropbtn"], ["style", "z-index: 10005;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 5, "a", [["routerLink", "/programs"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 40).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(32, 671744, [[4, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(33, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Programs"])), (_l()(), i1.ɵeld(37, 0, null, null, 47, "div", [["class", "dropdown-content hidden-xs hidden-sm"], ["style", "padding: 10px;margin-top:0px;"]], null, null, null, null, null)), i1.ɵdid(38, 278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(39, { "fadesh": 0 }), (_l()(), i1.ɵeld(40, 0, null, null, 8, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 4, "h3", [["class", "nav_title"], ["routerLink", "/Placements"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 42).onClick() !== false);
+    } return ad; }, null, null)), i1.ɵdid(40, 671744, [[4, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(41, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Programs"])), (_l()(), i1.ɵeld(45, 0, null, null, 47, "div", [["class", "dropdown-content hidden-xs hidden-sm"], ["style", "padding: 10px;margin-top:0px;"]], null, null, null, null, null)), i1.ɵdid(46, 278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(47, { "fadesh": 0 }), (_l()(), i1.ɵeld(48, 0, null, null, 8, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(49, 0, null, null, 4, "h3", [["class", "nav_title"], ["routerLink", "/Placements"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 50).onClick() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(42, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(43, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Placement.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Placement Programs"])), (_l()(), i1.ɵeld(46, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_2)), i1.ɵdid(48, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(49, 0, null, null, 26, "div", [["class", "row col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 8, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(51, 0, null, null, 4, "h3", [["class", "nav_title"], ["routerLink", "/Academic"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 52).onClick() !== false);
+    } return ad; }, null, null)), i1.ɵdid(50, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(51, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(52, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Placement.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Placement Programs"])), (_l()(), i1.ɵeld(54, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_3)), i1.ɵdid(56, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(57, 0, null, null, 26, "div", [["class", "row col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(58, 0, null, null, 8, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(59, 0, null, null, 4, "h3", [["class", "nav_title"], ["routerLink", "/Academic"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 60).onClick() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(52, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(53, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(54, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Academy.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Academic Programs"])), (_l()(), i1.ɵeld(56, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_3)), i1.ɵdid(58, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(59, 0, null, null, 8, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(60, 0, null, null, 4, "h3", [["class", "nav_title"], ["routerLink", "/other"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 61).onClick() !== false);
+    } return ad; }, null, null)), i1.ɵdid(60, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(61, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(62, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Academy.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Academic Programs"])), (_l()(), i1.ɵeld(64, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_4)), i1.ɵdid(66, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(67, 0, null, null, 8, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(68, 0, null, null, 4, "h3", [["class", "nav_title"], ["routerLink", "/other"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 69).onClick() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(61, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(62, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(63, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Academy.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Only at Digital Lync"])), (_l()(), i1.ɵeld(65, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_4)), i1.ɵdid(67, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(68, 0, null, null, 7, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(69, 0, null, null, 3, "h3", [["class", "nav_title"]], null, null, null, null, null)), (_l()(), i1.ɵeld(70, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(71, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Academy.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Government Program"])), (_l()(), i1.ɵeld(73, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_5)), i1.ɵdid(75, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(76, 0, null, null, 8, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(77, 0, null, null, 4, "h3", [["class", "nav_title"], ["routerLink", "/Future"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 78).onClick() !== false);
+    } return ad; }, null, null)), i1.ɵdid(69, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(70, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(71, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Academy.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Only at Digital Lync"])), (_l()(), i1.ɵeld(73, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_5)), i1.ɵdid(75, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(76, 0, null, null, 7, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(77, 0, null, null, 3, "h3", [["class", "nav_title"]], null, null, null, null, null)), (_l()(), i1.ɵeld(78, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(79, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Academy.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Government Program"])), (_l()(), i1.ɵeld(81, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_6)), i1.ɵdid(83, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(84, 0, null, null, 8, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(85, 0, null, null, 4, "h3", [["class", "nav_title"], ["routerLink", "/Future"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 86).onClick() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(78, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(79, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(80, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Academy.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["FutureDegree Programs"])), (_l()(), i1.ɵeld(82, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_6)), i1.ɵdid(84, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(85, 0, null, null, 5, "li", [["class", "list-item animated fadeIn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(86, 0, null, null, 4, "a", [["href", "https://www.digital-lync.com/"], ["routerLinkActive", "active-link"], ["target", "_blank"]], null, null, null, null, null)), i1.ɵdid(87, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 5, { links: 1 }), i1.ɵqud(603979776, 6, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Innovation"])), (_l()(), i1.ɵeld(91, 0, null, null, 6, "li", [["class", "list-item animated fadeIn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(92, 0, null, null, 5, "a", [["routerLink", "/blogs"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 93).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), i1.ɵdid(86, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(87, 0, null, null, 1, "i", [], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/Academy.svg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["FutureDegree Programs"])), (_l()(), i1.ɵeld(90, 0, null, null, 2, "ul", [["class", "nav_sub"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeaderComponent_7)), i1.ɵdid(92, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(93, 0, null, null, 5, "li", [["class", "list-item animated fadeIn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 4, "a", [["href", "https://www.digital-lync.com/"], ["routerLinkActive", "active-link"], ["target", "_blank"]], null, null, null, null, null)), i1.ɵdid(95, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 5, { links: 1 }), i1.ɵqud(603979776, 6, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Innovation"])), (_l()(), i1.ɵeld(99, 0, null, null, 6, "li", [["class", "list-item animated fadeIn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(100, 0, null, null, 5, "a", [["routerLink", "/blogs"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 101).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(93, 671744, [[8, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(94, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 7, { links: 1 }), i1.ɵqud(603979776, 8, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Blog"])), (_l()(), i1.ɵeld(98, 0, null, null, 6, "li", [["class", "list-item animated fadeIn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 5, "a", [["routerLink", "/events"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 100).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), i1.ɵdid(101, 671744, [[8, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(102, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 7, { links: 1 }), i1.ɵqud(603979776, 8, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Blog"])), (_l()(), i1.ɵeld(106, 0, null, null, 6, "li", [["class", "list-item animated fadeIn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(107, 0, null, null, 5, "a", [["routerLink", "/events"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 108).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(100, 671744, [[10, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(101, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 9, { links: 1 }), i1.ɵqud(603979776, 10, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Events"])), (_l()(), i1.ɵeld(105, 0, null, null, 6, "li", [["class", "list-item animated fadeIn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(106, 0, null, null, 5, "a", [["routerLink", "/connect"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 107).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), i1.ɵdid(108, 671744, [[10, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(109, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 9, { links: 1 }), i1.ɵqud(603979776, 10, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Events"])), (_l()(), i1.ɵeld(113, 0, null, null, 6, "li", [["class", "list-item animated fadeIn"]], null, null, null, null, null)), (_l()(), i1.ɵeld(114, 0, null, null, 5, "a", [["routerLink", "/connect"], ["routerLinkActive", "active-link"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 115).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(107, 671744, [[12, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(108, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 11, { links: 1 }), i1.ɵqud(603979776, 12, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Connect"])), (_l()(), i1.ɵeld(112, 0, null, null, 3, "li", [["class", "list-item book-an-appointment"]], null, null, null, null, null)), (_l()(), i1.ɵeld(113, 0, null, null, 2, "a", [["routerLink", "/connect"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 114).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+    } return ad; }, null, null)), i1.ɵdid(115, 671744, [[12, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵdid(116, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 11, { links: 1 }), i1.ɵqud(603979776, 12, { linksWithHrefs: 1 }), (_l()(), i1.ɵted(-1, null, ["Connect"])), (_l()(), i1.ɵeld(120, 0, null, null, 3, "li", [["class", "list-item book-an-appointment"]], null, null, null, null, null)), (_l()(), i1.ɵeld(121, 0, null, null, 2, "a", [["routerLink", "/connect"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 122).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(114, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Book an Appointment"]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = "/"; _ck(_v, 11, 0, currVal_0); var currVal_3 = "/courses"; _ck(_v, 16, 0, currVal_3); var currVal_4 = "active-link"; _ck(_v, 17, 0, currVal_4); var currVal_5 = "dropdown-content hidden-xs hidden-sm"; var currVal_6 = _ck(_v, 23, 0, _co.hoverEffect); _ck(_v, 22, 0, currVal_5, currVal_6); var currVal_7 = _co.list; _ck(_v, 29, 0, currVal_7); var currVal_10 = "/programs"; _ck(_v, 32, 0, currVal_10); var currVal_11 = "active-link"; _ck(_v, 33, 0, currVal_11); var currVal_12 = "dropdown-content hidden-xs hidden-sm"; var currVal_13 = _ck(_v, 39, 0, _co.hoverEffect); _ck(_v, 38, 0, currVal_12, currVal_13); var currVal_14 = "/Placements"; _ck(_v, 42, 0, currVal_14); var currVal_15 = _co.programList.placement; _ck(_v, 48, 0, currVal_15); var currVal_16 = "/Academic"; _ck(_v, 52, 0, currVal_16); var currVal_17 = _co.programList.academic; _ck(_v, 58, 0, currVal_17); var currVal_18 = "/other"; _ck(_v, 61, 0, currVal_18); var currVal_19 = _co.programList.other; _ck(_v, 67, 0, currVal_19); var currVal_20 = _co.programList.government; _ck(_v, 75, 0, currVal_20); var currVal_21 = "/Future"; _ck(_v, 78, 0, currVal_21); var currVal_22 = _co.programList.future; _ck(_v, 84, 0, currVal_22); var currVal_23 = "active-link"; _ck(_v, 87, 0, currVal_23); var currVal_26 = "/blogs"; _ck(_v, 93, 0, currVal_26); var currVal_27 = "active-link"; _ck(_v, 94, 0, currVal_27); var currVal_30 = "/events"; _ck(_v, 100, 0, currVal_30); var currVal_31 = "active-link"; _ck(_v, 101, 0, currVal_31); var currVal_34 = "/connect"; _ck(_v, 107, 0, currVal_34); var currVal_35 = "active-link"; _ck(_v, 108, 0, currVal_35); var currVal_38 = "/connect"; _ck(_v, 114, 0, currVal_38); }, function (_ck, _v) { var currVal_1 = i1.ɵnov(_v, 16).target; var currVal_2 = i1.ɵnov(_v, 16).href; _ck(_v, 15, 0, currVal_1, currVal_2); var currVal_8 = i1.ɵnov(_v, 32).target; var currVal_9 = i1.ɵnov(_v, 32).href; _ck(_v, 31, 0, currVal_8, currVal_9); var currVal_24 = i1.ɵnov(_v, 93).target; var currVal_25 = i1.ɵnov(_v, 93).href; _ck(_v, 92, 0, currVal_24, currVal_25); var currVal_28 = i1.ɵnov(_v, 100).target; var currVal_29 = i1.ɵnov(_v, 100).href; _ck(_v, 99, 0, currVal_28, currVal_29); var currVal_32 = i1.ɵnov(_v, 107).target; var currVal_33 = i1.ɵnov(_v, 107).href; _ck(_v, 106, 0, currVal_32, currVal_33); var currVal_36 = i1.ɵnov(_v, 114).target; var currVal_37 = i1.ɵnov(_v, 114).href; _ck(_v, 113, 0, currVal_36, currVal_37); }); }
+    } return ad; }, null, null)), i1.ɵdid(122, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Book an Appointment"]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = "/"; _ck(_v, 11, 0, currVal_0); var currVal_3 = "/courses"; _ck(_v, 16, 0, currVal_3); var currVal_4 = "active-link"; _ck(_v, 17, 0, currVal_4); var currVal_5 = "course-dropdown-content hidden-xs hidden-sm"; var currVal_6 = _ck(_v, 23, 0, _co.hoverEffect); _ck(_v, 22, 0, currVal_5, currVal_6); var currVal_7 = _co.list; _ck(_v, 30, 0, currVal_7); var currVal_8 = _co.membership; _ck(_v, 37, 0, currVal_8); var currVal_11 = "/programs"; _ck(_v, 40, 0, currVal_11); var currVal_12 = "active-link"; _ck(_v, 41, 0, currVal_12); var currVal_13 = "dropdown-content hidden-xs hidden-sm"; var currVal_14 = _ck(_v, 47, 0, _co.hoverEffect); _ck(_v, 46, 0, currVal_13, currVal_14); var currVal_15 = "/Placements"; _ck(_v, 50, 0, currVal_15); var currVal_16 = _co.programList.placement; _ck(_v, 56, 0, currVal_16); var currVal_17 = "/Academic"; _ck(_v, 60, 0, currVal_17); var currVal_18 = _co.programList.academic; _ck(_v, 66, 0, currVal_18); var currVal_19 = "/other"; _ck(_v, 69, 0, currVal_19); var currVal_20 = _co.programList.other; _ck(_v, 75, 0, currVal_20); var currVal_21 = _co.programList.government; _ck(_v, 83, 0, currVal_21); var currVal_22 = "/Future"; _ck(_v, 86, 0, currVal_22); var currVal_23 = _co.programList.future; _ck(_v, 92, 0, currVal_23); var currVal_24 = "active-link"; _ck(_v, 95, 0, currVal_24); var currVal_27 = "/blogs"; _ck(_v, 101, 0, currVal_27); var currVal_28 = "active-link"; _ck(_v, 102, 0, currVal_28); var currVal_31 = "/events"; _ck(_v, 108, 0, currVal_31); var currVal_32 = "active-link"; _ck(_v, 109, 0, currVal_32); var currVal_35 = "/connect"; _ck(_v, 115, 0, currVal_35); var currVal_36 = "active-link"; _ck(_v, 116, 0, currVal_36); var currVal_39 = "/connect"; _ck(_v, 122, 0, currVal_39); }, function (_ck, _v) { var currVal_1 = i1.ɵnov(_v, 16).target; var currVal_2 = i1.ɵnov(_v, 16).href; _ck(_v, 15, 0, currVal_1, currVal_2); var currVal_9 = i1.ɵnov(_v, 40).target; var currVal_10 = i1.ɵnov(_v, 40).href; _ck(_v, 39, 0, currVal_9, currVal_10); var currVal_25 = i1.ɵnov(_v, 101).target; var currVal_26 = i1.ɵnov(_v, 101).href; _ck(_v, 100, 0, currVal_25, currVal_26); var currVal_29 = i1.ɵnov(_v, 108).target; var currVal_30 = i1.ɵnov(_v, 108).href; _ck(_v, 107, 0, currVal_29, currVal_30); var currVal_33 = i1.ɵnov(_v, 115).target; var currVal_34 = i1.ɵnov(_v, 115).href; _ck(_v, 114, 0, currVal_33, currVal_34); var currVal_37 = i1.ɵnov(_v, 122).target; var currVal_38 = i1.ɵnov(_v, 122).href; _ck(_v, 121, 0, currVal_37, currVal_38); }); }
 exports.View_HeaderComponent_0 = View_HeaderComponent_0;
 function View_HeaderComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-header", [], null, null, null, View_HeaderComponent_0, RenderType_HeaderComponent)), i1.ɵdid(1, 114688, null, 0, i4.HeaderComponent, [i5.HeaderService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_HeaderComponent_Host_0 = View_HeaderComponent_Host_0;
@@ -7788,7 +8143,7 @@ exports.HeaderComponentNgFactory = HeaderComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = ["@media only screen and (min-width: 768px) and (max-width: 1024px) {\n  .nav[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding: 10px 6px; } }\n\n.nav[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  padding: 10px 15px; }\n\n@media only screen and (min-width: 768px) and (max-width: 1024px) {\n  .nav[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding: 10px 6px; } }\n\n.book-an-appointment[_ngcontent-%COMP%] {\n  text-align: center;\n  margin: auto;\n  color: #f5a623 !important;\n  padding-right: 0px !important;\n  margin-top: 2px;\n  border-radius: 100px;\n  border: solid 1px #25948a; }\n\n.book-an-appointment[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  padding: 7px 16px;\n  text-align: center;\n  margin: auto;\n  color: #f5a623 !important;\n  font-size: 15px; }\n\n.dropbtn[_ngcontent-%COMP%] {\n  color: white;\n  border: none; }\n\n.dropdown[_ngcontent-%COMP%] {\n  position: relative;\n  display: inline-block;\n  z-index: 1; }\n\n.dropdown-content[_ngcontent-%COMP%] {\n  display: none;\n  position: absolute;\n  background-color: white;\n  min-width: 160px;\n  max-width: 675px;\n  width: 675px;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 999999;\n  transition: all ease-in-out .2s;\n  cursor: pointer; }\n\n.dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: black;\n  padding: 6px 2px;\n  text-decoration: none;\n  display: block; }\n\n.dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  \n  color: #f5a623 !important; }\n\n.dropdown[_ngcontent-%COMP%]:hover   .dropdown-content[_ngcontent-%COMP%] {\n  display: block;\n  transition: all ease-in-out .2s; }\n\nul.dropdown-menu[_ngcontent-%COMP%] {\n  width: 800px;\n  background: #f3f3f3;\n  color: #000;\n  border: 0;\n  border-radius: 0;\n  box-shadow: none;\n  padding: 0 28px 29px; }\n\n.no-padding[_ngcontent-%COMP%] {\n  padding: 0; }\n\nh3.nav_title[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height: 20px;\n  margin: 0 8px 0 0;\n  text-align: left; }\n\nh3.nav_title[_ngcontent-%COMP%] {\n  font-size: 17px;\n  color: #000;\n  font-weight: 700;\n  line-height: 3;\n  margin-bottom: 0;\n  margin-left: -62px !important; }\n\nul.nav_sub[_ngcontent-%COMP%] {\n  margin: 0 0px 0px;\n  padding: 0;\n  border-left: 2px solid #cdcdcd; }\n\n.nav_main[_ngcontent-%COMP%] {\n  margin: 0 0px 0px;\n  padding: 0;\n  border-left: 1px solid #cdcdcd; }\n\nul.nav_sub[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  margin: 0 10px;\n  color: #cdcdcd;\n  text-align: left;\n  list-style-type: none; }\n\nul.nav_sub[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: black;\n  font-size: 15px; }\n\nh3.nav_title[_ngcontent-%COMP%] {\n  font-size: 17px;\n  color: #000;\n  font-weight: 700;\n  line-height: 2;\n  margin-bottom: 0; }\n\n.fadesh[_ngcontent-%COMP%] {\n  -webkit-animation: fadein 1s;\n  \n  \n  \n  \n  animation: fadein 1s; }\n\n@keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n\n\n\n\n@-webkit-keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n\n\n\n\n.nav_title[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  margin-left: 12px; }\n\n.fixednav[_ngcontent-%COMP%] {\n  position: fixed !important;\n  background-color: #fff !important;\n  z-index: 99999 !important;\n  width: 100% !important;\n  background-color: red; }"];
+var styles = ["@media only screen and (min-width: 768px) and (max-width: 1024px) {\n  .nav[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding: 10px 6px; } }\n\n.nav[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n  padding: 10px 15px; }\n\n@media only screen and (min-width: 768px) and (max-width: 1024px) {\n  .nav[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]    > a[_ngcontent-%COMP%] {\n    padding: 10px 6px; } }\n\n.star-size[_ngcontent-%COMP%] {\n  font-size: 1vw; }\n\n.book-an-appointment[_ngcontent-%COMP%] {\n  text-align: center;\n  margin: auto;\n  color: #f5a623 !important;\n  padding-right: 0px !important;\n  margin-top: 2px;\n  border-radius: 100px;\n  border: solid 1px #25948a; }\n\n.book-an-appointment[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  padding: 7px 16px;\n  text-align: center;\n  margin: auto;\n  color: #f5a623 !important;\n  font-size: 15px; }\n\n.dropbtn[_ngcontent-%COMP%] {\n  color: white;\n  border: none; }\n\n.dropdown[_ngcontent-%COMP%] {\n  position: relative;\n  display: inline-block;\n  z-index: 1; }\n\n.dropdown-content[_ngcontent-%COMP%] {\n  display: none;\n  position: absolute;\n  background-color: white;\n  min-width: 550px;\n  max-width: 675px;\n  width: 675px;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 999999;\n  transition: all ease-in-out .2s;\n  cursor: pointer; }\n\n.course-dropdown-content[_ngcontent-%COMP%] {\n  display: none;\n  position: absolute;\n  background-color: white;\n  min-width: 160px;\n  max-width: 950px;\n  width: 950px;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 999999;\n  transition: all ease-in-out .2s;\n  cursor: pointer;\n  margin-left: -487px; }\n\n@media only screen and (min-width: 1024px) and (max-width: 1330px) {\n  .course-dropdown-content[_ngcontent-%COMP%] {\n    margin-left: -338px; } }\n\n@media only screen and (min-width: 1350px) {\n  .course-dropdown-content[_ngcontent-%COMP%] {\n    margin-left: -468px; } }\n\n.dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: black;\n  padding: 6px 2px;\n  text-decoration: none;\n  display: block; }\n\n.course-dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: black;\n  padding: 6px 2px;\n  text-decoration: none;\n  display: block; }\n\n.dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  \n  color: #f5a623 !important; }\n\n.course-dropdown-content[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  \n  color: #f5a623 !important; }\n\n.dropdown[_ngcontent-%COMP%]:hover   .dropdown-content[_ngcontent-%COMP%] {\n  display: block;\n  transition: all ease-in-out .2s; }\n\n.dropdown[_ngcontent-%COMP%]:hover   .course-dropdown-content[_ngcontent-%COMP%] {\n  display: block;\n  transition: all ease-in-out .2s; }\n\nul.dropdown-menu[_ngcontent-%COMP%] {\n  width: 800px;\n  background: #f3f3f3;\n  color: #000;\n  border: 0;\n  border-radius: 0;\n  box-shadow: none;\n  padding: 0 28px 29px; }\n\n.no-padding[_ngcontent-%COMP%] {\n  padding: 0; }\n\nh3.nav_title[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height: 20px;\n  margin: 0 8px 0 0;\n  text-align: left; }\n\nh3.course-head[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height: 20px;\n  margin: 0 8px 0 0;\n  text-align: left; }\n\nh3.nav_title[_ngcontent-%COMP%] {\n  font-size: 17px;\n  color: #000;\n  font-weight: 700;\n  line-height: 3;\n  margin-bottom: 0;\n  margin-left: -62px !important; }\n\nh3.course-head[_ngcontent-%COMP%] {\n  font-size: 17px;\n  color: #000;\n  font-weight: 700;\n  line-height: 3;\n  margin-bottom: 15px !important;\n  padding: 6px;\n  border-bottom: 1px solid aqua;\n  margin-left: 20px;\n  margin-right: 20px; }\n\nul.nav_sub[_ngcontent-%COMP%] {\n  margin: 0 0px 0px;\n  padding: 0;\n  border-left: 2px solid #cdcdcd; }\n\nul.course-nav_sub[_ngcontent-%COMP%] {\n  margin: 0 0px 0px;\n  padding: 0; }\n\n.nav_main[_ngcontent-%COMP%] {\n  margin: 0 0px 0px;\n  padding: 0;\n  border-left: 1px solid #cdcdcd; }\n\nul.nav_sub[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  margin: 0 10px;\n  color: #cdcdcd;\n  text-align: left;\n  list-style-type: none; }\n\nul.course-nav_sub[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  margin: 0 10px;\n  color: #cdcdcd;\n  text-align: left;\n  list-style-type: none; }\n\nul.nav_sub[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: black;\n  font-size: 15px; }\n\nul.course-nav_sub[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: black;\n  font-size: 15px; }\n\nh3.nav_title[_ngcontent-%COMP%] {\n  font-size: 17px;\n  color: #000;\n  font-weight: 700;\n  line-height: 2;\n  margin-bottom: 0; }\n\nh3.course-head[_ngcontent-%COMP%] {\n  font-size: 17px;\n  color: #000;\n  font-weight: 700;\n  line-height: 2;\n  margin-bottom: 0;\n  margin-bottom: 15px !important; }\n\n.fadesh[_ngcontent-%COMP%] {\n  -webkit-animation: fadein 1s;\n  \n  \n  \n  \n  animation: fadein 1s; }\n\n@keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n\n\n\n\n@-webkit-keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n\n\n\n\n.nav_title[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  margin-left: 12px; }\n\n.course-head[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  margin-left: 12px; }\n\n.fixednav[_ngcontent-%COMP%] {\n  position: fixed !important;\n  background-color: #fff !important;\n  z-index: 99999 !important;\n  width: 100% !important;\n  background-color: red; }"];
 exports.styles = styles;
 
 
@@ -7827,7 +8182,13 @@ var HeaderComponent = /** @class */ (function () {
             { name: "Game Development", route: "game-development-course-training-hyderabad" },
             { name: "Graphic Design", route: "graphic-design-course-training-hyderabad" },
             { name: "UI/UX", route: "ui-ux-course-training-hyderabad" },
-            { name: "ServiceNow System Admin ", route: "servicenow-system-admin-course-training-hyderabad" },
+            { name: "ServiceNow", route: "servicenow-course-training-hyderabad" },
+            { name: "Salesforce", route: "salesforce-course-training-hyderabad" }
+        ];
+        this.membership = [
+            { name: "Silver Membership", route: "silver-membership", color: "#9b9b9b" },
+            { name: "Gold Membership", route: "gold-membership", color: "#d2a641" },
+            { name: "Platinum Membership", route: "platinum-membership", color: "#bf2827" }
         ];
         this.courseList = this.courseDataLoader();
         this.programList = this.programDataLoader();
@@ -7861,6 +8222,9 @@ var HeaderComponent = /** @class */ (function () {
     };
     HeaderComponent.prototype.navigateToDegreesProgram = function (pageName) {
         this.headerservice.navigateDegreesPage(pageName);
+    };
+    HeaderComponent.prototype.navigateToMembership = function (pageName) {
+        this.headerservice.navigateMembershipPage(pageName);
     };
     // navigateToIndividualPages(name:String){
     //   let data={
@@ -8114,6 +8478,9 @@ var HeaderService = /** @class */ (function () {
     };
     HeaderService.prototype.navigateDegreesPage = function (pageName) {
         this.router.navigate(['/future/' + pageName]);
+    };
+    HeaderService.prototype.navigateMembershipPage = function (pageName) {
+        this.router.navigate(['/membership/' + pageName]);
     };
     HeaderService.prototype.navigateToThanksPage = function () {
         this.router.navigate(['thankyou']);
@@ -8787,6 +9154,325 @@ var WeareoneComponent = /** @class */ (function () {
     return WeareoneComponent;
 }());
 exports.WeareoneComponent = WeareoneComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/components/membership/gold/gold.component.ngfactory.js":
+/*!************************************************************************!*\
+  !*** ./src/app/components/membership/gold/gold.component.ngfactory.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./gold.component.scss.shim.ngstyle */ "./src/app/components/membership/gold/gold.component.scss.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! ../../formmodal/formmodal.component.ngfactory */ "./src/app/components/formmodal/formmodal.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../../formmodal/formmodal.component */ "./src/app/components/formmodal/formmodal.component.ts");
+var i5 = __webpack_require__(/*! ../../courses/courses.service */ "./src/app/components/courses/courses.service.ts");
+var i6 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i7 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
+var i8 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i9 = __webpack_require__(/*! ./gold.component */ "./src/app/components/membership/gold/gold.component.ts");
+var styles_GoldComponent = [i0.styles];
+var RenderType_GoldComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_GoldComponent, data: {} });
+exports.RenderType_GoldComponent = RenderType_GoldComponent;
+function View_GoldComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "ul", [["class", "list"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "i", [["aria-hidden", "true"], ["class", "fa fa-check"], ["style", "margin-right: 8px"]], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.name; _ck(_v, 3, 0, currVal_0); }); }
+function View_GoldComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 15, "section", [["class", "container section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col-md-12 text-center"], ["style", " background-color: #daa520;box-shadow: 0 2px 3px 0 #9b9b9b;padding:15px;color:white"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Gold Membership"])), (_l()(), i1.ɵeld(5, 0, null, null, 10, "div", [["style", "background-color: white;box-shadow: 0 3px 12px 0 rgba(155, 155, 155, 0.54);padding:15px"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 5, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 2, "div", [["class", "col-md-6 section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_GoldComponent_1)), i1.ɵdid(9, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(10, 0, null, null, 1, "div", [["class", "col-md-6 col-sm-12 col-xs-12 section-padding membership-image"], ["style", "padding-top:20px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 0, "img", [["class", "img-responsive"], ["src", "../../../../assets/images/gold-membership.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 2, "div", [["class", "col-md-12 col-sm-12 col-xs-12 text-center section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 1, "app-formmodal", [], null, null, null, i3.View_FormmodalComponent_0, i3.RenderType_FormmodalComponent)), i1.ɵdid(15, 638976, null, 0, i4.FormmodalComponent, [i5.CoursesService, i6.Router, i7.FormBuilder, i8.DOCUMENT], { page: [0, "page"], buttonText: [1, "buttonText"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.list; _ck(_v, 9, 0, currVal_0); var currVal_1 = _co.page; var currVal_2 = _co.buttonText; _ck(_v, 15, 0, currVal_1, currVal_2); }, null); }
+exports.View_GoldComponent_0 = View_GoldComponent_0;
+function View_GoldComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-gold", [], null, null, null, View_GoldComponent_0, RenderType_GoldComponent)), i1.ɵdid(1, 114688, null, 0, i9.GoldComponent, [i6.Router], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_GoldComponent_Host_0 = View_GoldComponent_Host_0;
+var GoldComponentNgFactory = i1.ɵccf("app-gold", i9.GoldComponent, View_GoldComponent_Host_0, {}, {}, []);
+exports.GoldComponentNgFactory = GoldComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/components/membership/gold/gold.component.scss.shim.ngstyle.js":
+/*!********************************************************************************!*\
+  !*** ./src/app/components/membership/gold/gold.component.scss.shim.ngstyle.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [".list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  list-style-type: none;\n  line-height: 35px;\n  padding: 8px !important;\n  margin-left: 3em;\n  left: 10px;\n  list-style-position: outside;\n  text-align: left; }\n\n.membership-image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 300px;\n  height: 170px;\n  margin: auto;\n  margin-top: 70px; }\n\n.row[_ngcontent-%COMP%] {\n  margin: 0px !important; }"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/components/membership/gold/gold.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/components/membership/gold/gold.component.ts ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+// import { WINDOW } from "./window.service";
+var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var page_entity_1 = __webpack_require__(/*! ../../../apex/entities/page.entity */ "./src/app/apex/entities/page.entity.ts");
+var GoldComponent = /** @class */ (function () {
+    function GoldComponent(router) {
+        this.router = router;
+        this.page = new page_entity_1.Page();
+        this.buttonText = "Enroll Now";
+        this.list = [
+            { name: "Lifetime access to classroom training for above choosen package" },
+            { name: "Offer special Launch Price and Bonus for new product launch or tie - up with marketplace company and provide discount coupons" },
+            { name: "Resume support from expert" },
+            { name: "Community Discussion Forum" },
+            { name: "Technical Library - Latest E-Books, Technical Articles and Papers" },
+            { name: "24/7 Support" }
+        ];
+        this.routerFinder();
+    }
+    GoldComponent.prototype.ngOnInit = function () {
+    };
+    GoldComponent.prototype.routerFinder = function () {
+        this.router.events.subscribe(function (event) {
+            if (event instanceof router_1.NavigationEnd) {
+            }
+        });
+    };
+    return GoldComponent;
+}());
+exports.GoldComponent = GoldComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/components/membership/platinum/platinum.component.ngfactory.js":
+/*!********************************************************************************!*\
+  !*** ./src/app/components/membership/platinum/platinum.component.ngfactory.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./platinum.component.scss.shim.ngstyle */ "./src/app/components/membership/platinum/platinum.component.scss.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! ../../formmodal/formmodal.component.ngfactory */ "./src/app/components/formmodal/formmodal.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../../formmodal/formmodal.component */ "./src/app/components/formmodal/formmodal.component.ts");
+var i5 = __webpack_require__(/*! ../../courses/courses.service */ "./src/app/components/courses/courses.service.ts");
+var i6 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i7 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
+var i8 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i9 = __webpack_require__(/*! ./platinum.component */ "./src/app/components/membership/platinum/platinum.component.ts");
+var styles_PlatinumComponent = [i0.styles];
+var RenderType_PlatinumComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_PlatinumComponent, data: {} });
+exports.RenderType_PlatinumComponent = RenderType_PlatinumComponent;
+function View_PlatinumComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "ul", [["class", "list"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "i", [["aria-hidden", "true"], ["class", "fa fa-check"], ["style", "margin-right: 8px"]], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.name; _ck(_v, 3, 0, currVal_0); }); }
+function View_PlatinumComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 15, "section", [["class", "container section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col-md-12 text-center"], ["style", " background-color: #d0021b;box-shadow: 0 2px 3px 0 #d0021b;padding:15px;color:white"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Platinum Membership"])), (_l()(), i1.ɵeld(5, 0, null, null, 10, "div", [["style", "background-color: white;box-shadow: 0 3px 12px 0 rgba(155, 155, 155, 0.54);padding:15px"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 5, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 2, "div", [["class", "col-md-6 section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_PlatinumComponent_1)), i1.ɵdid(9, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(10, 0, null, null, 1, "div", [["class", "col-md-6 col-sm-12 col-xs-12 section-padding membership-image"], ["style", "padding-top:20px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 0, "img", [["class", "img-responsive"], ["src", "../../../../assets/images/platinum-membership.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 2, "div", [["class", "col-md-12 col-sm-12 col-xs-12 text-center section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 1, "app-formmodal", [], null, null, null, i3.View_FormmodalComponent_0, i3.RenderType_FormmodalComponent)), i1.ɵdid(15, 638976, null, 0, i4.FormmodalComponent, [i5.CoursesService, i6.Router, i7.FormBuilder, i8.DOCUMENT], { page: [0, "page"], buttonText: [1, "buttonText"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.list; _ck(_v, 9, 0, currVal_0); var currVal_1 = _co.page; var currVal_2 = _co.buttonText; _ck(_v, 15, 0, currVal_1, currVal_2); }, null); }
+exports.View_PlatinumComponent_0 = View_PlatinumComponent_0;
+function View_PlatinumComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-platinum", [], null, null, null, View_PlatinumComponent_0, RenderType_PlatinumComponent)), i1.ɵdid(1, 114688, null, 0, i9.PlatinumComponent, [i6.Router], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_PlatinumComponent_Host_0 = View_PlatinumComponent_Host_0;
+var PlatinumComponentNgFactory = i1.ɵccf("app-platinum", i9.PlatinumComponent, View_PlatinumComponent_Host_0, {}, {}, []);
+exports.PlatinumComponentNgFactory = PlatinumComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/components/membership/platinum/platinum.component.scss.shim.ngstyle.js":
+/*!****************************************************************************************!*\
+  !*** ./src/app/components/membership/platinum/platinum.component.scss.shim.ngstyle.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [".list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  list-style-type: none;\n  line-height: 35px;\n  padding: 8px !important;\n  margin-left: 3em;\n  left: 10px;\n  list-style-position: outside;\n  text-align: left; }\n\n.membership-image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 300px;\n  height: 170px;\n  margin: auto;\n  margin-top: 70px; }\n\n.row[_ngcontent-%COMP%] {\n  margin: 0px !important; }"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/components/membership/platinum/platinum.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/components/membership/platinum/platinum.component.ts ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+// import { WINDOW } from "./window.service";
+var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var page_entity_1 = __webpack_require__(/*! ../../../apex/entities/page.entity */ "./src/app/apex/entities/page.entity.ts");
+var PlatinumComponent = /** @class */ (function () {
+    function PlatinumComponent(router) {
+        this.router = router;
+        this.page = new page_entity_1.Page();
+        this.buttonText = "Enroll Now";
+        this.list = [
+            { name: "Lifetime access to classroom training for above choosen package" },
+            { name: "Lifetime access to all the Workshop Training on all the technologies " },
+            { name: "Special price for all the technologies products launched by us " },
+            { name: 'Resume support from expert' },
+            { name: "Community Discussion Forum" },
+            { name: "Technical Library - Latest E-Books, Technical Articles and Papers" },
+            { name: "24/7 Support" }
+        ];
+        this.routerFinder();
+    }
+    PlatinumComponent.prototype.ngOnInit = function () {
+    };
+    PlatinumComponent.prototype.routerFinder = function () {
+        this.router.events.subscribe(function (event) {
+            if (event instanceof router_1.NavigationEnd) {
+            }
+        });
+    };
+    return PlatinumComponent;
+}());
+exports.PlatinumComponent = PlatinumComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/components/membership/silver/silver.component.ngfactory.js":
+/*!****************************************************************************!*\
+  !*** ./src/app/components/membership/silver/silver.component.ngfactory.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./silver.component.scss.shim.ngstyle */ "./src/app/components/membership/silver/silver.component.scss.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! ../../formmodal/formmodal.component.ngfactory */ "./src/app/components/formmodal/formmodal.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../../formmodal/formmodal.component */ "./src/app/components/formmodal/formmodal.component.ts");
+var i5 = __webpack_require__(/*! ../../courses/courses.service */ "./src/app/components/courses/courses.service.ts");
+var i6 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i7 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
+var i8 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i9 = __webpack_require__(/*! ./silver.component */ "./src/app/components/membership/silver/silver.component.ts");
+var styles_SilverComponent = [i0.styles];
+var RenderType_SilverComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_SilverComponent, data: {} });
+exports.RenderType_SilverComponent = RenderType_SilverComponent;
+function View_SilverComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "ul", [["class", "list"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "i", [["aria-hidden", "true"], ["class", "fa fa-check"], ["style", "margin-right: 8px"]], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.name; _ck(_v, 3, 0, currVal_0); }); }
+function View_SilverComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 15, "section", [["class", "container section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col-md-12 text-center"], ["style", " background-color: #9b9b9b;box-shadow: 0 2px 3px 0 #9b9b9b;padding:15px;color:white"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Silver Membership"])), (_l()(), i1.ɵeld(5, 0, null, null, 10, "div", [["style", "background-color: white;box-shadow: 0 3px 12px 0 rgba(155, 155, 155, 0.54);padding:15px"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 5, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 2, "div", [["class", "col-md-6 section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_SilverComponent_1)), i1.ɵdid(9, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(10, 0, null, null, 1, "div", [["class", "col-md-6 col-sm-12 col-xs-12 section-padding membership-image"], ["style", "padding-top:20px;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(11, 0, null, null, 0, "img", [["class", "img-responsive"], ["src", "../../../../assets/images/silver-membership.png"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 2, "div", [["class", "col-md-12 col-sm-12 col-xs-12 text-center section-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 1, "app-formmodal", [], null, null, null, i3.View_FormmodalComponent_0, i3.RenderType_FormmodalComponent)), i1.ɵdid(15, 638976, null, 0, i4.FormmodalComponent, [i5.CoursesService, i6.Router, i7.FormBuilder, i8.DOCUMENT], { page: [0, "page"], buttonText: [1, "buttonText"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.list; _ck(_v, 9, 0, currVal_0); var currVal_1 = _co.page; var currVal_2 = _co.buttonText; _ck(_v, 15, 0, currVal_1, currVal_2); }, null); }
+exports.View_SilverComponent_0 = View_SilverComponent_0;
+function View_SilverComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-silver", [], null, null, null, View_SilverComponent_0, RenderType_SilverComponent)), i1.ɵdid(1, 114688, null, 0, i9.SilverComponent, [i6.Router], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_SilverComponent_Host_0 = View_SilverComponent_Host_0;
+var SilverComponentNgFactory = i1.ɵccf("app-silver", i9.SilverComponent, View_SilverComponent_Host_0, {}, {}, []);
+exports.SilverComponentNgFactory = SilverComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/components/membership/silver/silver.component.scss.shim.ngstyle.js":
+/*!************************************************************************************!*\
+  !*** ./src/app/components/membership/silver/silver.component.scss.shim.ngstyle.js ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [".list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  list-style-type: none;\n  line-height: 35px;\n  padding: 8px !important;\n  margin-left: 3em;\n  left: 10px;\n  list-style-position: outside;\n  text-align: left; }\n\n.membership-image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 300px;\n  height: 170px;\n  margin: auto;\n  margin-top: 70px; }\n\n.row[_ngcontent-%COMP%] {\n  margin: 0px !important; }"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/components/membership/silver/silver.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/components/membership/silver/silver.component.ts ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+// import { WINDOW } from "./window.service";
+var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var page_entity_1 = __webpack_require__(/*! ../../../apex/entities/page.entity */ "./src/app/apex/entities/page.entity.ts");
+var SilverComponent = /** @class */ (function () {
+    function SilverComponent(router) {
+        this.router = router;
+        this.page = new page_entity_1.Page();
+        this.buttonText = "Enroll Now";
+        this.list = [
+            { name: "Lifetime access to classroom training for above choosen package" },
+            { name: "Lifetime access to course documentation" },
+            { name: "Resume support from expert" },
+            { name: "Community Discussion Forum" },
+            { name: "Technical Library - Latest E-Books, Technical Articles and Papers" },
+            { name: "24/7 Support" }
+        ];
+        this.routerFinder();
+    }
+    SilverComponent.prototype.ngOnInit = function () {
+    };
+    SilverComponent.prototype.routerFinder = function () {
+        this.router.events.subscribe(function (event) {
+            if (event instanceof router_1.NavigationEnd) {
+            }
+        });
+    };
+    return SilverComponent;
+}());
+exports.SilverComponent = SilverComponent;
 
 
 /***/ }),
